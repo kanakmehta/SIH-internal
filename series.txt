@@ -1,0 +1,71 @@
+farm-rent-backend/
+├── __pycache__/
+├── app/
+│   ├── __pycache__/
+│   ├── __init__.cpython-3*.pyc
+│   ├── database.cpython-3*.pyc
+│   ├── main.cpython-3*.pyc
+│   ├── models.cpython-3*.pyc
+│   ├── schemas.cpython-3*.pyc
+│   ├── routers/
+│   ├── database.py
+│   ├── main.py
+│   ├── models.py
+│   ├── recommendations.py
+│   ├── schemas.py
+│   └── security.py
+├── node_modules/
+├── venv/
+├── .gitignore
+├── pyvenv.cfg
+├── chatbot.py
+├── crud.py
+├── dev.db
+├── language.html
+├── language1.html
+├── package.json
+├── package-lock.json
+├── requirements.txt
+├── seed.py
+└── server.js
+
+frontend/
+├── __pycache__/
+├── images/
+│   ├── harvester.png
+│   ├── plough.png
+│   ├── rotatovator.png
+│   ├── seeddrill.png
+│   ├── sprayer.png
+│   └── tractor.png
+├── app.py
+├── community.html
+├── dashboard.html
+├── demo.html
+├── equipment_details.html
+├── equipment_name.html
+├── equipments.json
+├── farmer_cleaned.json
+├── farmer.html
+├── gov_schemes.html
+├── gov_scheme.json
+├── gov_scheme3.html
+├── gov_schemes1.html
+├── gov_schemes2.html
+├── inbox.html
+├── landing_page.html
+├── language2.html
+├── login.html
+├── page_3.html
+├── pesticides.html
+├── profile.html
+├── rent.html
+├── translation.json
+├── weather_gemini.html
+├── weather_gpt.html
+├── weather1.html
+├── weather2.html
+└── instance/
+
+.gitignore.txt
+kisaan.sql

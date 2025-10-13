@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kisaan Saathi - Welcome</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Krona+One&display=swap" rel="stylesheet">
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: url('https://scitechdaily.com/images/Crops-Growing-Fertile-Farm-Land.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+.overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index:1;
+}
+.container {
+    position: relative;
+    z-index:2;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 1s ease forwards;
+}
+h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 32px;
+    color: #DBFFBD;
+    margin-bottom: 20px;
+    position: relative;
+}
+h1::before {
+    content: '🌾';
+    font-size:48px;
+    position:absolute;
+    left:-50px;
+    top:-10px;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #DBFFBD;
+}
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #174821, #2e6219);
+    color: #DBFFBD;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 4px;
+}
+button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #2e6219, #174821);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+.modal {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:3;
+}
+.modal-content {
+    background: #1e3d1a;
+    color: #DBFFBD;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    animation: fadeIn 0.5s ease forwards;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+.language-btn {
+    background: linear-gradient(90deg, #2e6219, #174821);
+    margin: 6px 0;
+    width: 80%;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width:480px) {
+    h1 { font-size: 24px; }
+    p { font-size: 14px; }
+    button { font-size: 12px; padding: 8px 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<!-- Language Selection Modal -->
+<div id="languageModal" class="modal">
+    <div class="modal-content">
+        <h2>Select Language</h2>
+        <button class="language-btn" onclick="selectLanguage('Assamese')">অসমীয়া</button>
+        <button class="language-btn" onclick="selectLanguage('Bengali')">বাংলা</button>
+        <button class="language-btn" onclick="selectLanguage('Bodo')">बोडो</button>
+        <button class="language-btn" onclick="selectLanguage('Dogri')">डोगरी</button>
+        <button class="language-btn" onclick="selectLanguage('Gujarati')">ગુજરાતી</button>
+        <button class="language-btn" onclick="selectLanguage('Hindi')">हिन्दी</button>
+        <button class="language-btn" onclick="selectLanguage('Kannada')">ಕನ್ನಡ</button>
+        <button class="language-btn" onclick="selectLanguage('Kashmiri')">कश्मीरी / كشميري</button>
+        <button class="language-btn" onclick="selectLanguage('Konkani')">कोंकणी / गोवा कोकणी</button>
+        <button class="language-btn" onclick="selectLanguage('Maithili')">मैथिली</button>
+        <button class="language-btn" onclick="selectLanguage('Malayalam')">മലയാളം</button>
+        <button class="language-btn" onclick="selectLanguage('Manipuri')">মণিপুরী</button>
+        <button class="language-btn" onclick="selectLanguage('Marathi')">मराठी</button>
+        <button class="language-btn" onclick="selectLanguage('Nepali')">नेपाली</button>
+        <button class="language-btn" onclick="selectLanguage('Odia')">ଓଡ଼ିଆ</button>
+        <button class="language-btn" onclick="selectLanguage('Punjabi')">ਪੰਜਾਬੀ</button>
+        <button class="language-btn" onclick="selectLanguage('Sanskrit')">संस्कृत</button>
+        <button class="language-btn" onclick="selectLanguage('Santali')">ᱥᱟᱱᱛᱟᱲᱤ</button>
+        <button class="language-btn" onclick="selectLanguage('Sindhi')">सिंधी / سنڌي</button>
+        <button class="language-btn" onclick="selectLanguage('Tamil')">தமிழ்</button>
+        <button class="language-btn" onclick="selectLanguage('Telugu')">తెలుగు</button>
+        <button class="language-btn" onclick="selectLanguage('Urdu')">اردو</button>
+    </div>
+</div>
+
+<!-- Main Container -->
+<div class="container" id="mainContainer" style="display: none;">
+    <h1 id="greeting">Namaste🙏!</h1>
+    <p id="welcomeText">Welcome to Kisaan Saathi! Your farming companion 🌱</p>
+    <button onclick="window.location.href='dashboard.html'">Get Started</button>
+</div>
+
+<script>
+function selectLanguage(lang) {
+    let greeting = document.getElementById('greeting');
+    let welcomeText = document.getElementById('welcomeText');
+
+    const translations = {
+        'Assamese': {greet: 'নমস্কাৰ চাষী!', text: 'কিসান সাথীলৈ স্বাগতম! আপোনাৰ চাষৰ সঙ্গী 🌱'},
+        'Bengali': {greet: 'নমস্কার কৃষক!', text: 'কিসান সাথীতে স্বাগতম! আপনার কৃষির সহায়ক 🌱'},
+        'Bodo': {greet: 'खोंगाय किसान!', text: 'किसान साथी बि सागोनि! आहोर खेती गाबखों 🌱'},
+        'Dogri': {greet: 'नमस्कार किसान!', text: 'किसान साथी विच तुहाडा स्वागत है! खेती दा साथी 🌱'},
+        'Gujarati': {greet: 'નમસ્તે ખેડૂત!', text: 'કિસાન સાથીમાં તમારું સ્વાગત છે! તમારી ખેતી માટે સાથી 🌱'},
+        'Hindi': {greet: 'नमस्ते किसान!', text: 'किसान साथी में आपका स्वागत है! आपकी खेती का साथी 🌱'},
+        'Kannada': {greet: 'ನಮಸ್ಕಾರ ರೈತ!', text: 'ಕಿಸಾನ್ ಸಾಥಿಗೆ ಸ್ವಾಗತ! ನಿಮ್ಮ ಕೃಷಿಗೆ ಸಂಗಾತಿ 🌱'},
+        'Kashmiri': {greet: 'سلام کسان!', text: 'کسان ساتھی من آپ کا خیرمقدم ہے! آپ کی زراعت کا ساتھی 🌱'},
+        'Konkani': {greet: 'नमस्कार शेतकरी!', text: 'किसान साथीमध्ये तुमचं स्वागत आहे! शेतीसाठी तुमचा साथी 🌱'},
+        'Maithili': {greet: 'नमस्कार किसान!', text: 'किसान साथी में अहाँक स्वागत छै! अहाँक खेती के साथी 🌱'},
+        'Malayalam': {greet: 'നമസ്കാരം കർഷകാ!', text: 'കിസാൻ സാത്തിയിലേക്ക് സ്വാഗതം! നിങ്ങളുടെ കൃഷിയുടെ സഹായി 🌱'},
+        'Manipuri': {greet: 'নমস্কার কৃষক!', text: 'কিসান সাথীতে আপনাকে স্বাগতম! আপনার কৃষির সহায়ক 🌱'},
+        'Marathi': {greet: 'नमस्कार शेतकरी!', text: 'किसान साथी मध्ये आपले स्वागत आहे! तुमचा शेतीसाठी मित्र 🌱'},
+        'Nepali': {greet: 'नमस्कार किसान!', text: 'किसान साथीमा स्वागत छ! तपाईंको कृषिको साथी 🌱'},
+        'Odia': {greet: 'ନମସ୍କାର ଚାଷୀ!', text: 'କିସାନ ସାଥୀକୁ ସ୍ୱାଗତ! ଆପଣଙ୍କ ଚାଷର ସାଥୀ 🌱'},
+        'Punjabi': {greet: 'ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਕਿਸਾਨ!', text: 'ਕਿਸਾਨ ਸਾਥੀ ਵਿਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ! ਤੁਹਾਡੀ ਖੇਤੀ ਦਾ ਸਾਥੀ 🌱'},
+        'Sanskrit': {greet: 'नमस्ते कृषक!', text: 'किसान साथी में स्वागतं! भवतः कृषेः सहायकः 🌱'},
+        'Santali': {greet: 'ᱥᱟᱱᱛᱟᱲᱤ ᱠᱷᱚᱱ!', text: 'ᱠᱤᱥᱟᱱ ᱥᱟᱛᱷᱤᱭᱮ ᱢᱚᱯᱚᱱᱟᱹ! ᱟᱢᱟᱱ ᱠᱷᱮᱛᱤ ᱢᱤᱴᱤ 🌱'},
+        'Sindhi': {greet: 'سلام کسان!', text: 'کسان ساتھی ۾ ڀليڪار! توهان جي زراعت جو ساٿي 🌱'},
+        'Tamil': {greet: 'வணக்கம் விவசாயி!', text: 'கிசான் சாதியில் உங்களை வரவேற்கிறோம்! உங்கள் விவசாய நண்பன் 🌱'},
+        'Telugu': {greet: 'నమస్తే రైతు!', text: 'కిసాన్ సాథిలో మీకు స్వాగతం! మీ వ్యవసాయానికి తోడు 🌱'},
+        'Urdu': {greet: 'سلام کسان!', text: 'کسان ساتھی میں خوش آمدید! آپ کی زراعت کا ساتھی 🌱'}
+    };
+
+    if(translations[lang]) {
+        greeting.textContent = translations[lang].greet;
+        welcomeText.textContent = translations[lang].text;
+    }
+
+    document.getElementById('languageModal').style.display = 'none';
+    document.getElementById('mainContainer').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
