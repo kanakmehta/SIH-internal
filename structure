@@ -1,0 +1,59 @@
+SIH/
+├── .gitignore
+├── .radio/
+├── .vscode/
+├── pycache/
+├── farm-rent-backend/
+│   ├── .git
+│   ├── pycache
+│   ├── app/
+│   │   ├── _pycache_
+│   │   ├── routers
+│   │   ├── database.py
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   ├── recommendations.py
+│   │   ├── schemas.py
+│   │   └── security.py
+│   ├── node_modules/
+│   │   └── (many dependency folders...)
+│   ├── venv/
+│   ├── chatbot.py
+│   ├── crud.py
+│   ├── dev  (Data Base File)
+│   ├── language
+│   ├── package.json
+│   ├── requirements
+│   ├── seed.py
+│   └── server.js
+├── frontend/
+│   ├── pycache_
+│   ├── images
+│   ├── app
+│   ├── community
+│   ├── dashboard
+│   ├── demo
+│   ├── equipment
+│   ├── equipment.json
+│   ├── farmer_cleaned.json
+│   ├── farmer
+│   ├── gov_schemes
+│   ├── gov_scheme.json
+│   ├── gov_schemes1
+│   ├── gov_schemes2
+│   ├── inbox
+│   ├── language2
+│   ├── landing_page
+│   ├── login
+│   ├── page_3
+│   ├── pesticides
+│   ├── profile
+│   ├── rent
+│   ├── translation.json
+│   ├── weather_gemini
+│   ├── weather1
+│   └── weather2
+├── instance/
+├── kisaan  (SQL Text File)
+├── series  (Text Document)
+└── venv/
