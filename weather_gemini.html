@@ -311,72 +311,85 @@
     const windElement = document.getElementById('wind-value');
     const pressureElement = document.getElementById('pressure-value');
     const detailsButton = document.getElementById('details-button');
+    const warningBox = document.querySelector('.warning-rectangle');
+    const warningText = warningBox.querySelector('p');
 
-    // Static placeholders for AQI and UV Index
     const aqiElement = document.getElementById('aqi-value');
     const uvElement = document.getElementById('uv-value');
 
     async function getWeatherData(city) {
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
         try {
-            const response = await fetch(url);
-            if (!response.ok) {
-                alert('City not found. Please try again.');
-                return;
-            }
+            const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+            const response = await fetch(weatherUrl);
+            if (!response.ok) throw new Error('City not found');
             const data = await response.json();
-            
-            // Update UI
-            const fullCityName = data.name + (data.sys.country ? `, ${data.sys.country}` : '');
+
+            const fullCityName = `${data.name}, ${data.sys.country}`;
             cityNameElement.textContent = fullCityName;
             cityInput.value = fullCityName;
             currentTempElement.textContent = Math.round(data.main.temp);
             conditionDescriptionElement.textContent = data.weather[0].description.toUpperCase();
-            
-            // Forecast for temp range
-            const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
-            const forecastResponse = await fetch(forecastUrl);
-            const forecastData = await forecastResponse.json();
-            const todayForecast = forecastData.list.filter(item => item.dt_txt.includes(new Date().toISOString().slice(0, 10)));
-            const minTemp = Math.round(Math.min(...todayForecast.map(item => item.main.temp_min)));
-            const maxTemp = Math.round(Math.max(...todayForecast.map(item => item.main.temp_max)));
-            
-            tempRangeElement.textContent = `${minTemp}~${maxTemp}°`;
             realFeelElement.textContent = Math.round(data.main.feels_like);
-            
             humidityElement.textContent = `${data.main.humidity}%`;
             windElement.textContent = `${(data.wind.speed * 3.6).toFixed(1)} km/h`;
             pressureElement.textContent = `${data.main.pressure} mb`;
 
-            // Details button link
-            detailsButton.onclick = function() {
-                const cityWithCountry = data.name + (data.sys.country ? `,${data.sys.country}` : '');
-                window.location.href = `weather_gpt.html?city=${encodeURIComponent(cityWithCountry)}`;
+            // Forecast for min/max temperature
+            const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+            const forecastResponse = await fetch(forecastUrl);
+            const forecastData = await forecastResponse.json();
+
+            const localDate = new Date().toISOString().split('T')[0];
+            const todayForecast = forecastData.list.filter(item => item.dt_txt.includes(localDate));
+
+            if (todayForecast.length > 0) {
+                const minTemp = Math.round(Math.min(...todayForecast.map(item => item.main.temp_min)));
+                const maxTemp = Math.round(Math.max(...todayForecast.map(item => item.main.temp_max)));
+                tempRangeElement.textContent = `${minTemp}~${maxTemp}°`;
+            } else {
+                tempRangeElement.textContent = "-";
+            }
+
+            // Weather alert logic
+            const condition = data.weather[0].main.toLowerCase();
+            let alertMessage = "";
+
+            if (condition.includes("rain")) {
+                alertMessage = "⚠️ Orange Alert: Heavy Rain expected. Carry umbrella.";
+                warningBox.style.backgroundColor = "rgba(255, 69, 0, 0.6)";
+            } else if (condition.includes("snow")) {
+                alertMessage = "❄️ Cold Alert: Snowfall expected, stay warm.";
+                warningBox.style.backgroundColor = "rgba(100, 149, 237, 0.6)";
+            } else if (data.main.temp > 35) {
+                alertMessage = "🔥 Heat Alert: High temperature warning.";
+                warningBox.style.backgroundColor = "rgba(255, 99, 71, 0.6)";
+            } else {
+                alertMessage = "✅ Weather conditions normal. No active alerts.";
+                warningBox.style.backgroundColor = "rgba(34,139,34,0.6)";
+            }
+
+            warningText.textContent = alertMessage;
+
+            // Details navigation
+            detailsButton.onclick = () => {
+                const cityEncoded = encodeURIComponent(`${data.name},${data.sys.country}`);
+                window.location.href = `weather_gpt.html?city=${cityEncoded}`;
             };
 
         } catch (error) {
-            console.error('Error fetching weather data:', error);
-            alert('Failed to get weather data. Please check your internet connection.');
+            console.error(error);
+            alert('City not found. Please try again.');
         }
     }
 
     cityInput.addEventListener('keypress', (event) => {
-        if (event.key === 'Enter') {
-            const city = cityInput.value;
-            if (city) {
-                getWeatherData(city);
-            }
-        }
-    });
-    
-    searchIcon.addEventListener('click', () => {
-        const city = cityInput.value;
-        if (city) {
-            getWeatherData(city);
-        }
+        if (event.key === 'Enter') getWeatherData(cityInput.value.trim());
     });
 
-    // Default city: Dehradun
+    searchIcon.addEventListener('click', () => {
+        getWeatherData(cityInput.value.trim());
+    });
+
     getWeatherData('Dehradun');
 </script>
 
