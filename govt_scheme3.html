@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Government Schemes</title>
+<style>
+  /* Body and Gradient Background */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9933, #ffffff, #138808); /* Orange-White-Green (Tricolor Gradient) */
+    min-height: 100vh;
+    color: #333;
+  }
+
+  /* Page Title */
+  h1 {
+    text-align: center;
+    color: #0b3d0b;
+    padding: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  }
+
+  /* Language Selector */
+  .lang-select {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #0b3d0b;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+  }
+
+  /* Schemes Container */
+  .schemes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    padding: 0 20px 50px 20px;
+  }
+
+  /* Scheme Cards */
+  .scheme-card {
+    background: linear-gradient(145deg, #fff9e6, #d9f0d9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 8px solid #0b3d0b;
+  }
+
+  .scheme-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+  }
+
+  .scheme-card h3 {
+    margin-top: 0;
+    color: #138808;
+    font-size: 1.3em;
+  }
+
+  .scheme-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  /* Responsive Title */
+  @media(max-width:600px){
+    h1 {
+      font-size: 2em;
+    }
+    select {
+      font-size: 14px;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<h1 id="title">Government Schemes</h1>
+
+<div class="lang-select">
+  <label for="language"><strong>Choose Language:</strong></label>
+  <select id="language">
+    <option value="en">English</option>
+    <option value="hi">Hindi</option>
+  </select>
+</div>
+
+<div class="schemes-container">
+  <div class="scheme-card" id="scheme1"><h3></h3><p></p></div>
+  <div class="scheme-card" id="scheme2"><h3></h3><p></p></div>
+  <div class="scheme-card" id="scheme3"><h3></h3><p></p></div>
+  <div class="scheme-card" id="scheme4"><h3></h3><p></p></div>
+  <div class="scheme-card" id="scheme5"><h3></h3><p></p></div>
+  <div class="scheme-card" id="scheme6"><h3></h3><p></p></div>
+  <div class="scheme-card" id="scheme7"><h3></h3><p></p></div>
+  <div class="scheme-card" id="scheme8"><h3></h3><p></p></div>
+  <div class="scheme-card" id="scheme9"><h3></h3><p></p></div>
+  <div class="scheme-card" id="scheme10"><h3></h3><p></p></div>
+</div>
+
+<script>
+const translations = {
+  en: {
+    title: "Government Schemes",
+    schemes:[
+      {name:"Pradhan Mantri Awas Yojana", desc:"Affordable housing scheme for urban and rural areas."},
+      {name:"MGNREGA", desc:"Employment guarantee scheme providing 100 days of wage employment."},
+      {name:"PM-Kisan Samman Nidhi", desc:"Direct income support to farmers annually."},
+      {name:"Ayushman Bharat", desc:"Health insurance coverage for economically weaker families."},
+      {name:"Swachh Bharat Mission", desc:"Nationwide cleanliness and sanitation initiative."},
+      {name:"Digital India", desc:"Promoting digital infrastructure and literacy."},
+      {name:"National Education Mission", desc:"Universal access to quality education."},
+      {name:"Startup India", desc:"Support for entrepreneurship and innovation."},
+      {name:"Pradhan Mantri Fasal Bima Yojana", desc:"Crop insurance scheme for farmers."},
+      {name:"National Pension Scheme", desc:"Retirement savings scheme for citizens."}
+    ]
+  },
+  hi: {
+    title:"सरकारी योजनाएँ",
+    schemes:[
+      {name:"प्रधान मंत्री आवास योजना", desc:"शहरी और ग्रामीण क्षेत्रों में किफायती आवास योजना।"},
+      {name:"मनरेगा", desc:"100 दिनों की रोजगार गारंटी योजना।"},
+      {name:"पीएम-किसान सम्मान निधि", desc:"किसानों को प्रतिवर्ष सीधा आय समर्थन।"},
+      {name:"आयुष्मान भारत", desc:"आर्थिक रूप से कमजोर परिवारों के लिए स्वास्थ्य बीमा।"},
+      {name:"स्वच्छ भारत मिशन", desc:"देशव्यापी स्वच्छता और सफाई अभियान।"},
+      {name:"डिजिटल इंडिया", desc:"डिजिटल इंफ्रास्ट्रक्चर और साक्षरता को बढ़ावा।"},
+      {name:"राष्ट्रीय शिक्षा मिशन", desc:"गुणवत्ता शिक्षा तक सार्वभौमिक पहुँच।"},
+      {name:"स्टार्टअप इंडिया", desc:"उद्यमिता और नवाचार का समर्थन।"},
+      {name:"प्रधान मंत्री फसल बीमा योजना", desc:"किसानों के लिए फसल बीमा योजना।"},
+      {name:"राष्ट्रीय पेंशन योजना", desc:"नागरिकों के लिए रिटायरमेंट बचत योजना।"}
+    ]
+  }
+};
+
+// Cards reference
+const elements = [];
+for(let i=1;i<=10;i++){
+  const card = document.getElementById(`scheme${i}`);
+  elements.push({card, title: card.querySelector("h3"), desc: card.querySelector("p")});
+}
+
+// Function to update content
+function updateContent(lang){
+  const data = translations[lang];
+  document.getElementById("title").textContent = data.title;
+  data.schemes.forEach((scheme, idx)=>{
+    if(elements[idx]){
+      elements[idx].title.textContent = scheme.name;
+      elements[idx].desc.textContent = scheme.desc;
+    }
+  });
+}
+
+// Initialize default language
+updateContent('en');
+
+// Event listener
+document.getElementById("language").addEventListener("change", e=>{
+  updateContent(e.target.value);
+});
+</script>
+
+</body>
+</html>

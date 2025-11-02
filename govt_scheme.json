@@ -1,0 +1,28 @@
+[
+    {
+        "key": "greeting",
+        "English": "Government Schemes",
+        "Hindi": "सरकारी योजनाएँ"
+    },
+    {
+        "key": "pm_kisan_title",
+        "English": "PM-KISAN",
+        "Hindi": "पीएम-किसान"
+    },
+    {
+        "key": "pm_kisan_desc",
+        "English": "Direct income support of ₹6,000 per year to small and marginal farmers.",
+        "Hindi": "छोटे और सीमांत किसानों को प्रति वर्ष ₹6,000 की सीधी आय सहायता।"
+    },
+    {
+        "key": "pmfby_title",
+        "English": "PMFBY",
+        "Hindi": "प्रधानमंत्री फसल बीमा योजना"
+    },
+    {
+        "key": "pmfby_desc",
+        "English": "Crop insurance scheme for loss due to natural risks.",
+        "Hindi": "प्राकृतिक जोखिमों के कारण फसल हानि पर बीमा योजना।"
+    }
+]
+

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisaan Saathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Krona+One&family=Kumar+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .page-container {
+            width: 1440px;
+            height: 1024px;
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: 122px 65px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            background: url('https://tse2.mm.bing.net/th/id/OIP.DjudtImYiLWN0axt_dgVuAHaE8?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3') no-repeat center center/cover;
+            background-size: cover;
+        }
+        
+        /* Updated overlay for opacity and contrast */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* 50% opacity white */
+            z-index: 1;
+        }
+
+        .header-top {
+            background-color: #72D894;
+            border: 1px solid #72D894;
+            display: flex;
+            align-items: center;
+            padding-left: 160px;
+            z-index: 3; /* Ensure header is above overlay */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            color: #174821;
+            font-family: 'Jomhuria', cursive;
+            font-size: 160px;
+            line-height: 100%;
+        }
+
+        .logo-container img {
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .header-nav {
+            background-color: #197734;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            color: white;
+            z-index: 3; /* Ensure nav is above overlay */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link.active {
+            background-color: #2e6219;
+        }
+
+        .nav-link:hover {
+            background-color: #4e882e;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 5;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            /* Background image is now set on .page-container and covered by overlay */
+            padding-top: 50px; /* Adjust spacing from the nav bar */
+        }
+
+        .content-elements {
+            position: relative;
+            z-index: 2; /* Ensure content is above the overlay */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .welcome-text {
+            font-family: 'Krona One', sans-serif;
+            font-size: 128px;
+            font-weight: 400;
+            color: #174821;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+
+        .suresh-text {
+            font-family: 'Kumar One', cursive;
+            font-size: 48px;
+            font-weight: 400;
+            color: #000000;
+            margin-top: 10px;
+        }
+
+        .profile-image {
+            width: 168px;
+            height: 164px;
+            margin-top: 20px;
+        }
+        
+        .get-started-btn {
+            width: 642px;
+            height: 138px;
+            border-radius: 35px;
+            background-color: #073210;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            color: #FFFFFF;
+            font-family: 'Kumar One', cursive;
+            font-size: 48px;
+            line-height: 100%;
+            border: none;
+        }
+        
+        .get-started-btn:hover {
+            background-color: #174821;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-container">
+    <div class="overlay"></div>
+
+    <div class="header-top">
+        <div class="logo-container">
+            <img src="https://www.freeiconspng.com/uploads/green-leaves-png-0.png" alt="Leaf Icon">
+            Kisaan Saathi
+        </div>
+    </div>
+
+    <div class="header-nav">
+        <div class="nav-links">
+            <a href="#" class="nav-link active">home</a>
+            <a href="#" class="nav-link">Profile</a>
+            <a href="#" class="nav-link">Community</a>
+        </div>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="#" class="nav-link">Language &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="#">English</a>
+                    <a href="#">Hindi</a>
+                </div>
+            </div>
+            <a href="#" class="nav-link">&#x1F4AC; Inbox</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="content-elements">
+            <h1 class="welcome-text">WELCOME</h1>
+            <p class="suresh-text">Suresh</p>
+            <img class="profile-image" src="https://i0.wp.com/upload.wikimedia.org/wikipedia/commons/thumb/7/72/Avatar_icon_green.svg/1200px-Avatar_icon_green.svg.png" alt="User Profile Icon">
+            <button class="get-started-btn">Get started</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

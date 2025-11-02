@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kisaan Saathi — Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#1B5E20;
+      --accent:#76FF03;
+      --bg:#F0F4EF;
+      --glass: rgba(255,255,255,0.2);
+      --shadow: rgba(0,0,0,0.2);
+      --neon:#76FF03;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Josefin Sans',sans-serif;
+      background:linear-gradient(135deg,#DBFFBD,#E5FFE5);
+      color:#2E3A23;
+      overflow-x:hidden;
+    }
+    .page{max-width:1400px;margin:40px auto;padding:20px;}
+    .header{
+      display:flex;justify-content:space-between;align-items:center;margin-bottom:50px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:16px;
+    }
+    .brand .logo{
+      font-size:48px;
+      animation:bounce 2s infinite;
+    }
+    @keyframes bounce{
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-10px);}
+    }
+    .brand .title{
+      font-family:'Krona One',sans-serif;
+      font-size:36px;
+      color:var(--primary);
+      text-shadow:2px 2px 4px rgba(0,0,0,0.2);
+    }
+    .close-button{
+      text-decoration:none;
+      color:var(--primary);
+      font-size:32px;
+      font-weight:bold;
+      transition: transform 0.3s,color 0.3s;
+    }
+    .close-button:hover{ transform:rotate(90deg); color:var(--accent); }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    /* Animated floating cards */
+    .card{
+      background:var(--glass);
+      backdrop-filter:blur(15px);
+      border-radius:24px;
+      padding:28px 20px;
+      text-align:center;
+      box-shadow:0 12px 28px var(--shadow);
+      cursor:pointer;
+      transition: transform 0.4s, box-shadow 0.4s;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      min-height:220px;
+      position:relative;
+      overflow:hidden;
+      animation:float 6s ease-in-out infinite;
+    }
+    @keyframes float{
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-8px);}
+    }
+    .card:hover{
+      transform:scale(1.08) translateY(-10px);
+      box-shadow:0 20px 40px rgba(0,0,0,0.25);
+    }
+    .card::before{
+      content:'';
+      position:absolute;
+      top:-50%;left:-50%;
+      width:200%;height:200%;
+      background:radial-gradient(circle at center,rgba(118,255,3,0.2),transparent 60%);
+      transform:rotate(45deg);
+      transition: all 0.6s;
+    }
+    .card:hover::before{
+      transform:rotate(0deg);
+      opacity:0.7;
+    }
+    .card img{
+      width:130px;
+      height:auto;
+      border-radius:16px;
+      margin-bottom:14px;
+      transition: transform 0.4s, filter 0.4s;
+    }
+    .card:hover img{ transform:scale(1.15) rotate(-5deg); filter:drop-shadow(0 0 12px var(--neon)); }
+    .card h4{
+      margin:12px 0 6px;
+      font-size:20px;
+      font-family:'Krona One';
+      color:var(--primary);
+      text-shadow:1px 1px 2px rgba(0,0,0,0.2);
+    }
+    .card p{ margin:0; font-size:14px; color:#32412B; }
+
+    /* Modal overlays */
+    #chatbot-overlay,#equipments-modal{
+      display:none;
+      position:fixed;inset:0;
+      background:rgba(0,0,0,0.6);
+      align-items:center;justify-content:center;
+      z-index:1200;padding:20px;
+      animation:fadeIn 0.5s ease forwards;
+    }
+    @keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}
+
+    #chatbot-panel,#equipments-box{
+      width:95%;max-width:980px;height:80vh;
+      background: rgba(255,255,255,0.95);
+      border-radius:20px;
+      overflow:hidden;
+      position:relative;
+      box-shadow:0 20px 40px rgba(0,0,0,0.3);
+      display:flex;flex-direction:column;
+      transform:translateY(-50px);
+      animation:slideUp 0.5s forwards;
+    }
+    @keyframes slideUp{0%{transform:translateY(50px);opacity:0;}100%{transform:translateY(0);opacity:1;}}
+
+    #chatbot-panel iframe{width:100%;height:100%;border:0;}
+    .panel-close{
+      position:absolute;top:12px;right:16px;
+      background:none;border:none;font-size:28px;
+      cursor:pointer;color:#2E3A23;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .panel-close:hover{ color:var(--accent); transform:rotate(90deg); }
+
+    #equipments-box{
+      padding:26px 20px;
+      overflow-y:auto;
+    }
+    #equipments-box h2{
+      margin-bottom:20px;
+      font-family:'Krona One';
+      font-size:30px;
+      color:var(--primary);
+      text-align:center;
+      text-shadow:1px 1px 3px rgba(0,0,0,0.2);
+    }
+    .equip-list{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+    .equip-card{
+      background:rgba(255,255,255,0.25);
+      backdrop-filter:blur(10px);
+      border-radius:16px;
+      padding:14px;
+      display:flex;gap:14px;align-items:center;
+      cursor:pointer;
+      border:1px solid rgba(23,72,33,0.18);
+      transition: transform 0.4s, box-shadow 0.4s;
+      position:relative;
+      overflow:hidden;
+    }
+    .equip-card::before{
+      content:'';
+      position:absolute;inset:0;
+      background:radial-gradient(circle at center,rgba(118,255,3,0.1),transparent 70%);
+      opacity:0;
+      transition:opacity 0.4s;
+      border-radius:16px;
+    }
+    .equip-card:hover::before{opacity:1;}
+    .equip-card:hover{
+      transform:translateY(-6px) scale(1.03);
+      box-shadow:0 14px 32px rgba(0,0,0,0.25);
+    }
+    .equip-card img{
+      width:90px;height:66px;object-fit:cover;border-radius:10px;
+    }
+    .equip-card h3{margin:0;font-size:16px;color:#123;font-weight:600;}
+    .equip-card p{margin:4px 0 0;font-size:13px;color:#2B4B2A;}
+
+    @media(max-width:480px){
+      .brand .title{ font-size:24px; }
+      .card img{ width:100px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="brand">
+        <div class="logo">🌾</div>
+        <div class="title">Kisaan Saathi — Dashboard</div>
+      </div>
+      <a class="close-button" href="landing_page.html" title="Back">×</a>
+    </div>
+
+    <main>
+      <div class="grid" id="main-grid">
+        <div id="chat-ai" class="card">
+          <img src="https://static.vecteezy.com/system/resources/previews/014/666/066/non_2x/chat-bot-icon-vector.jpg" alt="Chat AI">
+          <h4>Chat With AI</h4>
+          <p>Ask farming questions & get answers</p>
+        </div>
+
+        <div id="weather" class="card">
+          <img src="https://static.vecteezy.com/system/resources/previews/022/853/056/original/sun-cloud-icon-vector.jpg" alt="Weather">
+          <h4>Weather</h4>
+          <p>View local weather updates</p>
+        </div>
+
+        <div id="scanner" class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/5996/5996808.png" alt="Scanner">
+          <h4>Scanner</h4>
+          <p>Crop scanner (coming soon)</p>
+        </div>
+
+        <div id="rent-equipments" class="card">
+          <img src="https://thumbs.dreamstime.com/b/print-223104969.jpg" alt="Rent Equipments">
+          <h4>Rent Equipments</h4>
+          <p>Browse & rent farming equipment</p>
+        </div>
+
+        <div id="govt-schemes" class="card">
+          <img src="https://www.kindpng.com/picc/m/330-3300409_environmental-governance-icon-hd-png-download.png" alt="Govt Schemes">
+          <h4>Government Schemes</h4>
+          <p>Learn about schemes & subsidies</p>
+        </div>
+
+        <div id="pesticides" class="card">
+          <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-chemistry-organic-with-chemical-and-leaf-symbol-logo-icon-png-image_3618180.jpg" alt="Pesticides">
+          <h4>Pesticides</h4>
+          <p>Information about pesticides</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Chatbot overlay -->
+  <div id="chatbot-overlay">
+    <div id="chatbot-panel">
+      <button class="panel-close" onclick="closeChatbot()">✕</button>
+      <iframe src="http://127.0.0.1:7860" title="Chatbot"></iframe>
+    </div>
+  </div>
+
+  <!-- Equipments modal -->
+  <div id="equipments-modal">
+    <div id="equipments-box">
+      <button class="panel-close" onclick="closeEquipments()">✕</button>
+      <h2>Available Equipments</h2>
+      <div id="equipments-list" class="equip-list"></div>
+    </div>
+  </div>
+
+  <script>
+    function getImagePath(image) {
+      if (!image || image.trim() === "") return "./images/placeholder.png";
+      return "./images/" + image;
+    }
+
+    function openChatbot(){ document.getElementById('chatbot-overlay').style.display='flex'; }
+    function closeChatbot(){ document.getElementById('chatbot-overlay').style.display='none'; }
+
+    function openEquipments(){
+      document.getElementById('equipments-modal').style.display='flex';
+      loadEquipments();
+    }
+    function closeEquipments(){ document.getElementById('equipments-modal').style.display='none'; }
+
+    document.getElementById('equipments-modal').addEventListener('click',(e)=>{if(e.target===document.getElementById('equipments-modal')) closeEquipments();});
+    document.getElementById('chatbot-overlay').addEventListener('click',(e)=>{if(e.target===document.getElementById('chatbot-overlay')) closeChatbot();});
+
+    async function loadEquipments(){
+      const container=document.getElementById('equipments-list');
+      container.innerHTML='<p>Loading equipments...</p>';
+      try{
+        const res=await fetch('./equipments.json');
+        if(!res.ok){ container.innerHTML=`<p>Error ${res.status}</p>`; return; }
+        const list=await res.json();
+        if(!Array.isArray(list)||list.length===0){ container.innerHTML='<p>No equipments found.</p>'; return; }
+
+        container.innerHTML='';
+        list.forEach(eq=>{
+          const card=document.createElement('div');
+          card.className='equip-card';
+          const imgUrl=getImagePath(eq.image);
+          card.innerHTML=`<img src="${imgUrl}" alt="${eq.name}">
+          <div>
+            <h3>${eq.name}</h3>
+            <p>Type: ${eq.type}</p>
+            <p>₹ ${eq.price_per_day} / day</p>
+          </div>`;
+          card.addEventListener('click',()=>{window.location.href=`equipment_details.html?id=${encodeURIComponent(eq.id)}`;});
+          container.appendChild(card);
+        });
+      }catch(err){ container.innerHTML='<p>Error loading equipments.</p>'; console.error(err);}
+    }
+
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.getElementById('chat-ai').addEventListener('click',openChatbot);
+      document.getElementById('weather').addEventListener('click',()=>window.location.href='weather_gemini.html');
+      document.getElementById('scanner').addEventListener('click',()=>alert('📷 Scanner coming soon!'));
+      document.getElementById('rent-equipments').addEventListener('click',openEquipments);
+      document.getElementById('govt-schemes').addEventListener('click',()=>window.location.href='govt_scheme3.html');
+      document.getElementById('pesticides').addEventListener('click',()=>window.location.href='pesticides.html');
+    });
+  </script>
+</body>
+</html>

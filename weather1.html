@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yamuna Nagar Weather</title>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Rowdies&family=Quattrocento&family=Poller+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Looped+Thai&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #CCF69F;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://tse1.mm.bing.net/th/id/OIP.USacE-VQRr3CCk5qX48CuAHaE8?pid=Api&P=0&h=180');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.search-bar {
+    width: 1309px;
+    height: 105px;
+    background-color: #0d3719;
+    border-radius: 50px;
+    position: absolute;
+    top: 47px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.search-bar img { width: 50px; height: 50px; }
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+.search-bar input::placeholder { color: #ccc; }
+.location-header-rectangle {
+    width: 1440px;
+    height: 221px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 220px;
+    left: 0;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    color: #E7FDBE;
+}
+.location-header-rectangle h2 {
+    font-family: 'Rowdies', cursive;
+    font-weight: 400;
+    font-size: 96px;
+    color: #05290D;
+    margin: 0;
+}
+.temperature {
+    font-family: 'Quattrocento', serif;
+    font-weight: 400;
+    font-size: 128px;
+    color: #073210;
+    position: absolute;
+    top: 323px;
+    left: 91px;
+    z-index: 2;
+}
+.condition-text {
+    font-family: 'Poller One', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 366px;
+    left: 314px;
+    z-index: 2;
+}
+.conditions-container {
+    width: 500px;
+    background: #275a27;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 483px;
+    left: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+.conditions-container h2 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.conditions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.condition-card {
+    background: #153a15;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+.condition-title { font-weight: bold; margin-bottom: 5px; }
+.condition-value { font-size: 14px; }
+.aqi { color: #00ff66; }
+.low { color: #66ff99; }
+.warning-rectangle {
+    width: 639px;
+    height: 334px;
+    background-color: rgba(248, 13, 13, 0.5);
+    border-radius: 50px;
+    position: absolute;
+    top: 483px;
+    left: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.warning-rectangle .alert-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.warning-rectangle p {
+    font-family: 'Poetsen One', 'Noto Looped Thai', sans-serif;
+    font-size: 48px;
+    color: #E7FDBE;
+    margin: 0;
+    line-height: 1.2;
+}
+.weather-details-rectangle {
+    width: 676px;
+    height: 112px;
+    background-color: #386D43;
+    border-radius: 50px;
+    position: absolute;
+    top: 863px;
+    left: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 15px;
+}
+.weather-details-rectangle span {
+    font-family: 'Poetsen One', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.weather-details-rectangle img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="search-bar">
+        <img src="https://www.pngkit.com/png/full/26-269603_search-magnifying-glass-icon-png-grey.png" alt="Search Icon">
+        <input type="text" id="city-input" placeholder="City Name">
+        <img src="https://cdn-icons-png.flaticon.com/512/32/32573.png" alt="Location Icon" style="filter: invert(1);" id="search-btn">
+    </div>
+
+    <div class="location-header-rectangle">
+        <h2 id="city-name">Yamuna Nagar, Haryana</h2>
+    </div>
+
+    <div class="temperature" id="temperature">27°</div>
+    <div class="condition-text" id="condition-text">CLOUD <br> 24~27° RealFeel 30°</div>
+
+    <div class="conditions-container">
+        <h2>Current conditions</h2>
+        <div class="conditions-grid">
+            <div class="condition-card">
+                <div class="condition-title">Humidity</div>
+                <div class="condition-value" id="humidity">72%</div>
+            </div>
+            <div class="condition-card">
+                <div class="condition-title">Precipitation</div>
+                <div class="condition-value" id="precipitation">0 mm</div>
+            </div>
+            <div class="condition-card">
+                <div class="condition-title">Wind</div>
+                <div class="condition-value" id="wind">8.8 km/h</div>
+            </div>
+            <div class="condition-card">
+                <div class="condition-title">AQI</div>
+                <div class="condition-value aqi" id="aqi">Fair (46)</div>
+            </div>
+            <div class="condition-card">
+                <div class="condition-title">UV index</div>
+                <div class="condition-value low" id="uv">Low</div>
+            </div>
+            <div class="condition-card">
+                <div class="condition-title">Pressure</div>
+                <div class="condition-value" id="pressure">1003.0 mb</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="warning-rectangle">
+        <img src="http://www.pngmart.com/files/7/Emergency-PNG-Transparent-Image.png" alt="Warning Icon" class="alert-icon">
+        <p>Orange Alert for heavy<br>Rainfall in effect until<br>Thursday, 12:04pm IST.</p>
+    </div>
+
+    <div class="weather-details-rectangle">
+        <span>Weather Details</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Next Page Arrow">
+    </div>
+</div>
+
+<script>
+const apiKey = "06e285a46caaecd8e1e626caa69446f7";
+let city = "Yamuna Nagar,IN";
+
+async function getWeather() {
+    try {
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
+        const data = await res.json();
+        document.getElementById("city-name").innerText = data.name + ", " + data.sys.country;
+        document.getElementById("temperature").innerText = Math.round(data.main.temp) + "°C";
+        document.getElementById("condition-text").innerHTML = data.weather[0].main + "<br>" +
+            Math.round(data.main.temp_min) + "~" + Math.round(data.main.temp_max) + "°C RealFeel " + Math.round(data.main.feels_like) + "°C";
+        document.getElementById("humidity").innerText = data.main.humidity + "%";
+        document.getElementById("pressure").innerText = data.main.pressure + " mb";
+        document.getElementById("wind").innerText = (data.wind.speed * 3.6).toFixed(1) + " km/h";
+        document.getElementById("precipitation").innerText = data.rain ? data.rain["1h"] + " mm" : "0 mm";
+        document.getElementById("uv").innerText = "Low";
+        document.getElementById("aqi").innerText = "Fair (46)";
+    } catch(err) {
+        console.error(err);
+        alert("Error fetching weather data.");
+    }
+}
+
+// Initial fetch
+getWeather();
+
+// Auto-update every 10 minutes
+setInterval(getWeather, 600000);
+
+// Search button
+document.getElementById("search-btn").addEventListener("click", () => {
+    const input = document.getElementById("city-input").value.trim();
+    if(input) {
+        city = input + ",IN";
+        getWeather();
+    }
+});
+</script>
+</body>
+</html>

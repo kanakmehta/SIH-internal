@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "owner_id": 1,
+    "name": "Tractor X100",
+    "type": "tractor",
+    "description": "High power tractor suitable for large farms.",
+    "image": "tractor.png"
+  },
+  {
+    "id": 2,
+    "owner_id": 1,
+    "name": "Harvester H200",
+    "type": "harvester",
+    "description": "Efficient harvester for wheat and rice crops.",
+    "image": "harvester.png"
+  },
+  {
+    "id": 3,
+    "owner_id": 2,
+    "name": "Plough P300",
+    "type": "plough",
+    "description": "Durable plough for heavy soil.",
+    "image": "plough.png"
+  },
+  {
+    "id": 4,
+    "owner_id": 2,
+    "name": "Sprayer S400",
+    "type": "sprayer",
+    "description": "Manual and motorized pesticide sprayer.",
+    "image": "sprayer.png"
+  },
+  {
+    "id": 5,
+    "owner_id": 3,
+    "name": "Seed Drill D500",
+    "type": "seed drill",
+    "description": "High efficiency seed drill for large fields.",
+    "image": "seeddrill.png"
+  },
+  {
+    "id": 6,
+    "owner_id": 3,
+    "name": "Rotavator R600",
+    "type": "rotator",
+    "description": "Rotavator for soil preparation and mixing.",
+    "image": "rotavator.png"
+  }
+]

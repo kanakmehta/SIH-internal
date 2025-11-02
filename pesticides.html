@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Pesticides</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Golos+Text:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Golos Text', sans-serif;
+            background-color: #CCF69F;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            background-color: #254828;
+            border-bottom-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 20px;
+            box-sizing: border-box; 
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .header img {
+            height: 200px;
+            object-fit: contain;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            font-family: 'Jomhuria', serif;
+            font-weight: 400;
+            font-size: 100px;
+            color: #E7FDBE;
+            margin: 0;
+        }
+
+        .back-button {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #E7FDBE;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .search-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        #searchInput {
+            width: 80%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 2px solid #254828;
+        }
+
+        .pesticide-list {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .pesticide-card {
+            background-color: #A7CA81;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .pesticide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .pesticide-card h2 {
+            font-weight: 700;
+            font-size: 24px;
+            color: #254828;
+            margin-top: 0;
+        }
+
+        .pesticide-card ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin: 10px 0 0 0;
+        }
+
+        .pesticide-card ul li {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        span.highlight {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div class="header-content">
+            <img src="https://cdn-icons-png.flaticon.com/256/8758/8758581.png" alt="Pesticide Icon">
+            <h1>Pesticides</h1>
+        </div>
+        <button class="back-button" onclick="history.back()">&lt;</button>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search pesticides, problems or benefits...">
+    </div>
+
+    <main id="pesticide-list" class="pesticide-list">
+        <!-- Pesticide cards will be dynamically generated here -->
+    </main>
+</div>
+
+<script>
+    const pesticides = [
+        {"id":1,"pesticide":"Neem Oil","problem":"Aphids on tomatoes","benefit":"Eco-friendly, biodegradable, safe for beneficial insects"},
+        {"id":2,"pesticide":"Neem Oil","problem":"Whiteflies on cotton","benefit":"Reduces pest population naturally"},
+        {"id":3,"pesticide":"Garlic Extract","problem":"Spider mites on peppers","benefit":"Natural repellent, non-toxic"},
+        {"id":4,"pesticide":"Garlic Extract","problem":"Aphids on cucumbers","benefit":"Safe for humans and pets"},
+        {"id":5,"pesticide":"Soap Spray","problem":"Aphids on lettuce","benefit":"Kills soft-bodied insects, biodegradable"},
+        {"id":6,"pesticide":"Soap Spray","problem":"Mites on beans","benefit":"Safe for soil and beneficial insects"},
+        {"id":7,"pesticide":"Neem Cake","problem":"Soil nematodes","benefit":"Improves soil fertility and controls pests"},
+        {"id":8,"pesticide":"Bacillus thuringiensis","problem":"Leaf-eating caterpillars","benefit":"Biological pesticide, non-toxic to humans"},
+        {"id":9,"pesticide":"Kaolin Clay","problem":"Powdery mildew on grapes","benefit":"Forms protective barrier, reduces fungal infection"},
+        {"id":10,"pesticide":"Baking Soda","problem":"Powdery mildew on squash","benefit":"Environmentally safe, inexpensive"},
+        {"id":11,"pesticide":"Milk Spray","problem":"Powdery mildew on roses","benefit":"Promotes plant immunity, non-toxic"},
+        {"id":12,"pesticide":"Diatomaceous Earth","problem":"Cutworms on cabbage","benefit":"Mechanical pest control, long-lasting"},
+        {"id":13,"pesticide":"Pyrethrin","problem":"Leaf miners on spinach","benefit":"Derived from flowers, biodegradable"},
+        {"id":14,"pesticide":"Neem Oil","problem":"Thrips on onions","benefit":"Reduces pest reproduction, organic"},
+        {"id":15,"pesticide":"Neem Oil","problem":"Scale insects on guava","benefit":"Non-toxic, safe for humans"},
+        {"id":16,"pesticide":"Garlic-Chili Spray","problem":"Aphids on beans","benefit":"Strong repellent, natural"},
+        {"id":17,"pesticide":"Neem Oil","problem":"Leaf miner on tomato","benefit":"Eco-friendly, kills larvae"},
+        {"id":18,"pesticide":"Sticky Trap","problem":"Fruit flies on mangoes","benefit":"Non-chemical, easy to use"},
+        {"id":19,"pesticide":"Neem Cake","problem":"Soil nematodes in carrot field","benefit":"Fertilizes soil, controls pests"},
+        {"id":20,"pesticide":"Copper Bio-fungicide","problem":"Leaf spot on spinach","benefit":"Natural copper, minimal environmental impact"},
+        {"id":21,"pesticide":"Neem Oil","problem":"Aphids on maize","benefit":"Biodegradable, non-toxic"},
+        {"id":22,"pesticide":"Garlic Extract","problem":"Whiteflies on tomatoes","benefit":"Organic pest control"},
+        {"id":23,"pesticide":"Bacillus thuringiensis","problem":"Caterpillars on cabbage","benefit":"Biological control, safe for humans"},
+        {"id":24,"pesticide":"Milk Spray","problem":"Powdery mildew on cucumber","benefit":"Enhances plant immunity, safe"},
+        {"id":25,"pesticide":"Baking Soda","problem":"Fungal infection on beans","benefit":"Cheap, safe, effective"},
+        {"id":26,"pesticide":"Diatomaceous Earth","problem":"Cutworms on maize","benefit":"Mechanical, chemical-free control"},
+        {"id":27,"pesticide":"Neem Oil","problem":"Thrips on okra","benefit":"Organic, biodegradable"},
+        {"id":28,"pesticide":"Soap Spray","problem":"Aphids on cucumbers","benefit":"Eco-friendly, biodegradable"},
+        {"id":29,"pesticide":"Kaolin Clay","problem":"Powdery mildew on grapes","benefit":"Protective physical barrier"},
+        {"id":30,"pesticide":"Pyrethrin","problem":"Leaf miners on beans","benefit":"Natural flower extract, safe"},
+        {"id":31,"pesticide":"Garlic Extract","problem":"Spider mites on tomatoes","benefit":"Repels pests, non-toxic"},
+        {"id":32,"pesticide":"Neem Oil","problem":"Aphids on cauliflower","benefit":"Kills pests, safe for soil"},
+        {"id":33,"pesticide":"Neem Cake","problem":"Soil nematodes in cabbage","benefit":"Fertilizes soil, controls pests"},
+        {"id":34,"pesticide":"Sticky Trap","problem":"Fruit flies on guava","benefit":"Non-toxic, easy to use"},
+        {"id":35,"pesticide":"Neem Oil","problem":"Whiteflies on brinjal","benefit":"Organic, eco-friendly"},
+        {"id":36,"pesticide":"Bacillus thuringiensis","problem":"Caterpillars on tomato","benefit":"Biological control, safe"},
+        {"id":37,"pesticide":"Milk Spray","problem":"Powdery mildew on peas","benefit":"Safe, boosts plant immunity"},
+        {"id":38,"pesticide":"Baking Soda","problem":"Fungal infection on squash","benefit":"Cheap, non-toxic"},
+        {"id":39,"pesticide":"Diatomaceous Earth","problem":"Cutworms on cabbage","benefit":"Mechanical, chemical-free"},
+        {"id":40,"pesticide":"Neem Oil","problem":"Thrips on lettuce","benefit":"Eco-friendly, kills pests"},
+        {"id":41,"pesticide":"Garlic-Chili Spray","problem":"Aphids on beans","benefit":"Natural repellent, strong smell"},
+        {"id":42,"pesticide":"Soap Spray","problem":"Mites on cucumber","benefit":"Safe, biodegradable"},
+        {"id":43,"pesticide":"Neem Oil","problem":"Leaf miner on spinach","benefit":"Kills larvae, organic"},
+        {"id":44,"pesticide":"Sticky Trap","problem":"Fruit flies on citrus","benefit":"Non-toxic, traps pests"},
+        {"id":45,"pesticide":"Kaolin Clay","problem":"Powdery mildew on grapes","benefit":"Physical barrier, eco-friendly"},
+        {"id":46,"pesticide":"Bacillus thuringiensis","problem":"Caterpillars on cabbage","benefit":"Safe, biological control"},
+        {"id":47,"pesticide":"Neem Cake","problem":"Soil nematodes in carrot field","benefit":"Fertilizer & pest control"},
+        {"id":48,"pesticide":"Garlic Extract","problem":"Spider mites on beans","benefit":"Natural repellent, safe"},
+        {"id":49,"pesticide":"Neem Oil","problem":"Aphids on peas","benefit":"Eco-friendly, biodegradable"},
+        {"id":50,"pesticide":"Milk Spray","problem":"Powdery mildew on roses","benefit":"Non-toxic, boosts immunity"},
+        {"id":51,"pesticide":"Soap Spray","problem":"Aphids on lettuce","benefit":"Safe for humans, biodegradable"},
+        {"id":52,"pesticide":"Baking Soda","problem":"Fungal infection on beans","benefit":"Eco-friendly, safe"},
+        {"id":53,"pesticide":"Neem Oil","problem":"Whiteflies on tomatoes","benefit":"Biodegradable, kills pests"},
+        {"id":54,"pesticide":"Garlic Extract","problem":"Spider mites on peppers","benefit":"Natural, non-toxic"},
+        {"id":55,"pesticide":"Neem Cake","problem":"Soil nematodes affecting vegetables","benefit":"Fertilizes soil, controls pests"},
+        {"id":56,"pesticide":"Bacillus thuringiensis","problem":"Leaf-eating caterpillars","benefit":"Biological control, safe"},
+        {"id":57,"pesticide":"Kaolin Clay","problem":"Powdery mildew on grapes","benefit":"Protective barrier, non-toxic"},
+        {"id":58,"pesticide":"Pyrethrin","problem":"Leaf miners on spinach","benefit":"Natural flower extract, biodegradable"},
+        {"id":59,"pesticide":"Garlic-Chili Spray","problem":"Aphids on beans","benefit":"Strong natural repellent"},
+        {"id":60,"pesticide":"Sticky Trap","problem":"Fruit flies on mangoes","benefit":"Non-toxic, traps pests effectively"},
+        {"id":61,"pesticide":"Neem Oil","problem":"Thrips on okra","benefit":"Eco-friendly, kills pests"},
+        {"id":62,"pesticide":"Milk Spray","problem":"Powdery mildew on cucumber","benefit":"Non-toxic, boosts immunity"},
+        {"id":63,"pesticide":"Diatomaceous Earth","problem":"Cutworms on maize","benefit":"Mechanical pest control"},
+        {"id":64,"pesticide":"Soap Spray","problem":"Aphids on cucumbers","benefit":"Eco-friendly, safe for soil"},
+        {"id":65,"pesticide":"Neem Oil","problem":"Leaf miner on tomato","benefit":"Organic, kills larvae"},
+        {"id":66,"pesticide":"Bacillus thuringiensis","problem":"Caterpillars on cabbage","benefit":"Biological, safe for humans"},
+        {"id":67,"pesticide":"Garlic Extract","problem":"Spider mites on tomatoes","benefit":"Natural repellent, non-toxic"},
+        {"id":68,"pesticide":"Neem Cake","problem":"Soil nematodes in carrot field","benefit":"Fertilizer & pest control"},
+        {"id":69,"pesticide":"Kaolin Clay","problem":"Powdery mildew on grapes","benefit":"Physical barrier, safe"},
+        {"id":70,"pesticide":"Milk Spray","problem":"Powdery mildew on roses","benefit":"Non-toxic, boosts plant immunity"},
+        {"id":71,"pesticide":"Soap Spray","problem":"Mites on beans","benefit":"Safe, biodegradable"},
+        {"id":72,"pesticide":"Neem Oil","problem":"Aphids on lettuce","benefit":"Eco-friendly, kills pests"},
+        {"id":73,"pesticide":"Garlic-Chili Spray","problem":"Aphids on beans","benefit":"Strong natural repellent"},
+        {"id":74,"pesticide":"Bacillus thuringiensis","problem":"Leaf-eating caterpillars","benefit":"Safe, biological control"},
+        {"id":75,"pesticide":"Diatomaceous Earth","problem":"Cutworms on cabbage","benefit":"Mechanical pest control"},
+        {"id":76,"pesticide":"Neem Oil","problem":"Thrips on onions","benefit":"Organic, biodegradable"},
+        {"id":77,"pesticide":"Baking Soda","problem":"Powdery mildew on squash","benefit":"Eco-friendly, cheap"},
+        {"id":78,"pesticide":"Garlic Extract","problem":"Spider mites on peppers","benefit":"Natural, non-toxic"},
+        {"id":79,"pesticide":"Neem Oil","problem":"Aphids on peas","benefit":"Safe, biodegradable"},
+        {"id":80,"pesticide":"Sticky Trap","problem":"Fruit flies on citrus","benefit":"Non-toxic, traps pests"},
+        {"id":81,"pesticide":"Neem Cake","problem":"Soil nematodes in cabbage","benefit":"Fertilizer & pest control"},
+        {"id":82,"pesticide":"Milk Spray","problem":"Powdery mildew on cucumber","benefit":"Safe, boosts immunity"},
+        {"id":83,"pesticide":"Soap Spray","problem":"Aphids on lettuce","benefit":"Eco-friendly, biodegradable"},
+        {"id":84,"pesticide":"Kaolin Clay","problem":"Powdery mildew on grapes","benefit":"Physical barrier, safe"},
+        {"id":85,"pesticide":"Bacillus thuringiensis","problem":"Caterpillars on cabbage","benefit":"Biological control, safe"},
+        {"id":86,"pesticide":"Neem Oil","problem":"Leaf miner on tomato","benefit":"Eco-friendly, kills larvae"},
+        {"id":87,"pesticide":"Garlic-Chili Spray","problem":"Aphids on beans","benefit":"Strong natural repellent"},
+        {"id":88,"pesticide":"Neem Oil","problem":"Whiteflies on brinjal","benefit":"Organic, biodegradable"},
+        {"id":89,"pesticide":"Diatomaceous Earth","problem":"Cutworms on maize","benefit":"Mechanical control, chemical-free"},
+        {"id":90,"pesticide":"Pyrethrin","problem":"Leaf miners on spinach","benefit":"Natural, biodegradable"},
+        {"id":91,"pesticide":"Garlic Extract","problem":"Spider mites on tomatoes","benefit":"Non-toxic, repellent"},
+        {"id":92,"pesticide":"Neem Cake","problem":"Soil nematodes affecting vegetables","benefit":"Fertilizer & pest control"},
+        {"id":93,"pesticide":"Milk Spray","problem":"Powdery mildew on roses","benefit":"Safe, boosts plant immunity"},
+        {"id":94,"pesticide":"Baking Soda","problem":"Fungal infection on beans","benefit":"Eco-friendly, cheap"},
+        {"id":95,"pesticide":"Neem Oil","problem":"Thrips on okra","benefit":"Biodegradable, kills pests"},
+        {"id":96,"pesticide":"Soap Spray","problem":"Aphids on cucumbers","benefit":"Safe, biodegradable"},
+        {"id":97,"pesticide":"Kaolin Clay","problem":"Powdery mildew on grapes","benefit":"Physical barrier, eco-friendly"},
+        {"id":98,"pesticide":"Bacillus thuringiensis","problem":"Leaf-eating caterpillars","benefit":"Safe, biological control"},
+        {"id":99,"pesticide":"Garlic Extract","problem":"Spider mites on peppers","benefit":"Natural, non-toxic"},
+        {"id":100,"pesticide":"Neem Oil","problem":"Aphids on tomatoes","benefit":"Eco-friendly, biodegradable"}
+    ];
+
+    const listContainer = document.getElementById('pesticide-list');
+    const searchInput = document.getElementById('searchInput');
+
+    function highlight(text, query) {
+        if (!query) return text;
+        const regex = new RegExp(`(${query})`, 'gi');
+        return text.replace(regex, '<span class="highlight">$1</span>');
+    }
+
+    function displayPesticides(data, query = '') {
+        listContainer.innerHTML = '';
+        data.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'pesticide-card';
+            card.innerHTML = `
+                <h2>${highlight(p.pesticide, query)}</h2>
+                <ul>
+                    <li>Problem: ${highlight(p.problem, query)}</li>
+                    <li>Benefit: ${highlight(p.benefit, query)}</li>
+                </ul>
+            `;
+            listContainer.appendChild(card);
+        });
+    }
+
+    displayPesticides(pesticides);
+
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase();
+        const filtered = pesticides.filter(p =>
+            p.pesticide.toLowerCase().includes(query) ||
+            p.problem.toLowerCase().includes(query) ||
+            p.benefit.toLowerCase().includes(query)
+        );
+        displayPesticides(filtered, query);
+    });
+</script>
+
+</body>
+</html>

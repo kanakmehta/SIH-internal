@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Golos Text', sans-serif;
+            background-color: #A7CA81;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .weather-container {
+            width: 100%;
+            max-width: 1440px;
+            height: 100vh;
+            background-color: #A7CA81;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #254828;
+            color: #E7FDBE;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .back-arrow {
+            font-size: 30px;
+            cursor: pointer;
+            color: #E7FDBE;
+            text-decoration: none;
+        }
+
+        .daily-forecast {
+            display: flex;
+            justify-content: space-around;
+            background-color: #72D894;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .day-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #254828;
+            font-size: 18px;
+        }
+
+        .day-card.today {
+            font-weight: bold;
+        }
+
+        .day-card img {
+            width: 80px;
+            height: 80px;
+            margin: 10px 0;
+        }
+
+        .day-card .temp {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hourly-overview {
+            background-color: #254828;
+            color: #E7FDBE;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hourly-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .hourly-header h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        .switch input:checked + .slider {
+            background-color: #14BC44;
+        }
+
+        .switch input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .hourly-scroll {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 20px;
+            scrollbar-width: thin;
+            scrollbar-color: #72D894 #254828;
+        }
+
+        .hourly-scroll::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .hourly-scroll::-webkit-scrollbar-track {
+            background: #254828;
+        }
+
+        .hourly-scroll::-webkit-scrollbar-thumb {
+            background-color: #72D894;
+            border-radius: 4px;
+            border: 2px solid #254828;
+        }
+
+        .hourly-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin-right: 15px;
+            text-align: center;
+            min-width: 80px;
+        }
+
+        .hourly-card img {
+            width: 40px;
+            height: 40px;
+            margin: 5px 0;
+        }
+
+        .hourly-card .time {
+            font-size: 14px;
+        }
+
+        .hourly-card .temp {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .graph-section {
+            background-color: #A7CA81;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .graph-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="weather-container">
+    <div class="header">
+        <h1>Weather Details:</h1>
+        <a href="#" class="back-arrow" onclick="history.back()" aria-label="Go Back">&lt;</a>
+    </div>
+
+    <section class="daily-forecast">
+        <div class="day-card today">
+            <span>Today</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Sunny weather icon">
+            <span class="temp">27°</span>
+        </div>
+        <div class="day-card">
+            <span>Thu 4</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/3592/3592750.png" alt="Cloudy weather icon">
+            <span class="temp">29°</span>
+        </div>
+        <div class="day-card">
+            <span>Fri 5</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Rainy weather icon">
+            <span class="temp">28°</span>
+        </div>
+        <div class="day-card">
+            <span>Sat 6</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/3592/3592750.png" alt="Cloudy weather icon">
+            <span class="temp">29°</span>
+        </div>
+        <div class="day-card">
+            <span>Sun 7</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Rainy weather icon">
+            <span class="temp">28°</span>
+        </div>
+    </section>
+
+    <section class="hourly-overview">
+        <div class="hourly-header">
+            <h2>Hourly Overview</h2>
+            <label class="switch">
+                <input type="checkbox" aria-label="Toggle temperature unit">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="hourly-scroll">
+            <div class="hourly-card today">
+                <span class="time">Now</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Sunny weather now">
+                <span class="temp">24°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">2 AM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Rainy weather 2 AM">
+                <span class="temp">24°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">4 AM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Rainy weather 4 AM">
+                <span class="temp">24°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">6 AM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Rainy weather 6 AM">
+                <span class="temp">24°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">8 AM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/3592/3592750.png" alt="Cloudy weather 8 AM">
+                <span class="temp">25°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">10 AM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Sunny weather 10 AM">
+                <span class="temp">29°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">12 PM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Sunny weather 12 PM">
+                <span class="temp">30°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">2 PM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Sunny weather 2 PM">
+                <span class="temp">30°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">4 PM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/3592/3592750.png" alt="Cloudy weather 4 PM">
+                <span class="temp">29°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">6 PM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Rainy weather 6 PM">
+                <span class="temp">28°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">8 PM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Rainy weather 8 PM">
+                <span class="temp">25°</span>
+            </div>
+            <div class="hourly-card">
+                <span class="time">10 PM</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Rainy weather 10 PM">
+                <span class="temp">22°</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="graph-section">
+        <img class="graph-image" src="https://placehold.co/1200x400/80bd80/254828?text=Weather+Graph+Placeholder" alt="Weather graph showing trends">
+    </section>
+
+</div>
+
+</body>
+</html>

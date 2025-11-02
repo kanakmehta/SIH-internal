@@ -1,0 +1,5160 @@
+[
+  {
+    "id": 1,
+    "farmer": "Farmer 1",
+    "equipments": [
+      {
+        "name": "Tractor T696",
+        "type": "tractor",
+        "price_per_day": 2370,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H975",
+        "type": "harvester",
+        "price_per_day": 4648,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9505390718",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 2,
+    "farmer": "Farmer 2",
+    "equipments": [
+      {
+        "name": "Harvester H828",
+        "type": "harvester",
+        "price_per_day": 4917,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S769",
+        "type": "sprayer",
+        "price_per_day": 1780,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P888",
+        "type": "plough",
+        "price_per_day": 577,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R884",
+        "type": "rotator",
+        "price_per_day": 2247,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9444142799",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 3,
+    "farmer": "Farmer 3",
+    "equipments": [
+      {
+        "name": "Seed Drill D917",
+        "type": "seed drill",
+        "price_per_day": 2100,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H243",
+        "type": "harvester",
+        "price_per_day": 2883,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P389",
+        "type": "plough",
+        "price_per_day": 1035,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R681",
+        "type": "rotator",
+        "price_per_day": 2492,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9107613522",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 4,
+    "farmer": "Farmer 4",
+    "equipments": [
+      {
+        "name": "Seed Drill D968",
+        "type": "seed drill",
+        "price_per_day": 1637,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S881",
+        "type": "sprayer",
+        "price_per_day": 1809,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Harvester H621",
+        "type": "harvester",
+        "price_per_day": 4398,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P616",
+        "type": "plough",
+        "price_per_day": 640,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9642665063",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 5,
+    "farmer": "Farmer 5",
+    "equipments": [
+      {
+        "name": "Plough P549",
+        "type": "plough",
+        "price_per_day": 723,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T803",
+        "type": "tractor",
+        "price_per_day": 4490,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H169",
+        "type": "harvester",
+        "price_per_day": 3492,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R713",
+        "type": "rotator",
+        "price_per_day": 2005,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9595716164",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 6,
+    "farmer": "Farmer 6",
+    "equipments": [
+      {
+        "name": "Rotator R213",
+        "type": "rotator",
+        "price_per_day": 3360,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D973",
+        "type": "seed drill",
+        "price_per_day": 2429,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9957684106",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 7,
+    "farmer": "Farmer 7",
+    "equipments": [
+      {
+        "name": "Plough P746",
+        "type": "plough",
+        "price_per_day": 650,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S661",
+        "type": "sprayer",
+        "price_per_day": 410,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R241",
+        "type": "rotator",
+        "price_per_day": 3419,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9409303438",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 8,
+    "farmer": "Farmer 8",
+    "equipments": [
+      {
+        "name": "Rotator R340",
+        "type": "rotator",
+        "price_per_day": 2121,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S472",
+        "type": "sprayer",
+        "price_per_day": 1606,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T123",
+        "type": "tractor",
+        "price_per_day": 3869,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9524027516",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 9,
+    "farmer": "Farmer 9",
+    "equipments": [
+      {
+        "name": "Harvester H306",
+        "type": "harvester",
+        "price_per_day": 4155,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R918",
+        "type": "rotator",
+        "price_per_day": 2048,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S480",
+        "type": "sprayer",
+        "price_per_day": 508,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T156",
+        "type": "tractor",
+        "price_per_day": 4255,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9757317684",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 10,
+    "farmer": "Farmer 10",
+    "equipments": [
+      {
+        "name": "Seed Drill D575",
+        "type": "seed drill",
+        "price_per_day": 2888,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S488",
+        "type": "sprayer",
+        "price_per_day": 1812,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9548134887",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 11,
+    "farmer": "Farmer 11",
+    "equipments": [
+      {
+        "name": "Tractor T898",
+        "type": "tractor",
+        "price_per_day": 2740,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P880",
+        "type": "plough",
+        "price_per_day": 1232,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9787214340",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 12,
+    "farmer": "Farmer 12",
+    "equipments": [
+      {
+        "name": "Plough P801",
+        "type": "plough",
+        "price_per_day": 601,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S535",
+        "type": "sprayer",
+        "price_per_day": 317,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9198922810",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 13,
+    "farmer": "Farmer 13",
+    "equipments": [
+      {
+        "name": "Seed Drill D367",
+        "type": "seed drill",
+        "price_per_day": 1349,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T834",
+        "type": "tractor",
+        "price_per_day": 2185,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P815",
+        "type": "plough",
+        "price_per_day": 617,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9466449851",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 14,
+    "farmer": "Farmer 14",
+    "equipments": [
+      {
+        "name": "Harvester H102",
+        "type": "harvester",
+        "price_per_day": 2386,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D588",
+        "type": "seed drill",
+        "price_per_day": 2734,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9339542891",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 15,
+    "farmer": "Farmer 15",
+    "equipments": [
+      {
+        "name": "Tractor T762",
+        "type": "tractor",
+        "price_per_day": 2734,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R575",
+        "type": "rotator",
+        "price_per_day": 3499,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P292",
+        "type": "plough",
+        "price_per_day": 1485,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S357",
+        "type": "sprayer",
+        "price_per_day": 844,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9930577787",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 16,
+    "farmer": "Farmer 16",
+    "equipments": [
+      {
+        "name": "Tractor T478",
+        "type": "tractor",
+        "price_per_day": 3328,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S219",
+        "type": "sprayer",
+        "price_per_day": 1330,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R867",
+        "type": "rotator",
+        "price_per_day": 3456,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D667",
+        "type": "seed drill",
+        "price_per_day": 2054,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9612613270",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 17,
+    "farmer": "Farmer 17",
+    "equipments": [
+      {
+        "name": "Plough P617",
+        "type": "plough",
+        "price_per_day": 1133,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T824",
+        "type": "tractor",
+        "price_per_day": 4483,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H937",
+        "type": "harvester",
+        "price_per_day": 2052,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9952060066",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 18,
+    "farmer": "Farmer 18",
+    "equipments": [
+      {
+        "name": "Harvester H467",
+        "type": "harvester",
+        "price_per_day": 4338,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D636",
+        "type": "seed drill",
+        "price_per_day": 1950,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P593",
+        "type": "plough",
+        "price_per_day": 731,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R959",
+        "type": "rotator",
+        "price_per_day": 2044,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9348464650",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 19,
+    "farmer": "Farmer 19",
+    "equipments": [
+      {
+        "name": "Harvester H536",
+        "type": "harvester",
+        "price_per_day": 4663,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P820",
+        "type": "plough",
+        "price_per_day": 571,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9712594518",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 20,
+    "farmer": "Farmer 20",
+    "equipments": [
+      {
+        "name": "Harvester H499",
+        "type": "harvester",
+        "price_per_day": 4788,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R270",
+        "type": "rotator",
+        "price_per_day": 3003,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S362",
+        "type": "sprayer",
+        "price_per_day": 890,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P701",
+        "type": "plough",
+        "price_per_day": 626,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9529661036",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 21,
+    "farmer": "Farmer 21",
+    "equipments": [
+      {
+        "name": "Tractor T878",
+        "type": "tractor",
+        "price_per_day": 2908,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Seed Drill D881",
+        "type": "seed drill",
+        "price_per_day": 1822,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9882428361",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 22,
+    "farmer": "Farmer 22",
+    "equipments": [
+      {
+        "name": "Tractor T756",
+        "type": "tractor",
+        "price_per_day": 1871,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P547",
+        "type": "plough",
+        "price_per_day": 620,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9862466222",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 23,
+    "farmer": "Farmer 23",
+    "equipments": [
+      {
+        "name": "Sprayer S223",
+        "type": "sprayer",
+        "price_per_day": 1982,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D672",
+        "type": "seed drill",
+        "price_per_day": 2982,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9523679460",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 24,
+    "farmer": "Farmer 24",
+    "equipments": [
+      {
+        "name": "Rotator R705",
+        "type": "rotator",
+        "price_per_day": 1664,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P749",
+        "type": "plough",
+        "price_per_day": 905,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H817",
+        "type": "harvester",
+        "price_per_day": 4325,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S286",
+        "type": "sprayer",
+        "price_per_day": 1235,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9036205454",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 25,
+    "farmer": "Farmer 25",
+    "equipments": [
+      {
+        "name": "Sprayer S681",
+        "type": "sprayer",
+        "price_per_day": 892,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P297",
+        "type": "plough",
+        "price_per_day": 1495,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H173",
+        "type": "harvester",
+        "price_per_day": 2857,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T970",
+        "type": "tractor",
+        "price_per_day": 3496,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9738849283",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 26,
+    "farmer": "Farmer 26",
+    "equipments": [
+      {
+        "name": "Harvester H761",
+        "type": "harvester",
+        "price_per_day": 3294,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T694",
+        "type": "tractor",
+        "price_per_day": 3085,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9544649573",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 27,
+    "farmer": "Farmer 27",
+    "equipments": [
+      {
+        "name": "Tractor T113",
+        "type": "tractor",
+        "price_per_day": 1656,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H519",
+        "type": "harvester",
+        "price_per_day": 3272,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9929883334",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 28,
+    "farmer": "Farmer 28",
+    "equipments": [
+      {
+        "name": "Harvester H906",
+        "type": "harvester",
+        "price_per_day": 3831,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R915",
+        "type": "rotator",
+        "price_per_day": 3202,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P653",
+        "type": "plough",
+        "price_per_day": 1169,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9626098543",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 29,
+    "farmer": "Farmer 29",
+    "equipments": [
+      {
+        "name": "Plough P533",
+        "type": "plough",
+        "price_per_day": 1476,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H498",
+        "type": "harvester",
+        "price_per_day": 3759,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R215",
+        "type": "rotator",
+        "price_per_day": 1231,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S738",
+        "type": "sprayer",
+        "price_per_day": 1337,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9133602078",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 30,
+    "farmer": "Farmer 30",
+    "equipments": [
+      {
+        "name": "Harvester H666",
+        "type": "harvester",
+        "price_per_day": 2408,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D983",
+        "type": "seed drill",
+        "price_per_day": 2668,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9044148642",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 31,
+    "farmer": "Farmer 31",
+    "equipments": [
+      {
+        "name": "Sprayer S853",
+        "type": "sprayer",
+        "price_per_day": 1861,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Harvester H745",
+        "type": "harvester",
+        "price_per_day": 2896,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P942",
+        "type": "plough",
+        "price_per_day": 914,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T616",
+        "type": "tractor",
+        "price_per_day": 4978,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9329025210",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 32,
+    "farmer": "Farmer 32",
+    "equipments": [
+      {
+        "name": "Rotator R974",
+        "type": "rotator",
+        "price_per_day": 1707,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S298",
+        "type": "sprayer",
+        "price_per_day": 471,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9384195271",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 33,
+    "farmer": "Farmer 33",
+    "equipments": [
+      {
+        "name": "Seed Drill D355",
+        "type": "seed drill",
+        "price_per_day": 2459,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R392",
+        "type": "rotator",
+        "price_per_day": 3849,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P962",
+        "type": "plough",
+        "price_per_day": 801,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S981",
+        "type": "sprayer",
+        "price_per_day": 828,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9198257458",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 34,
+    "farmer": "Farmer 34",
+    "equipments": [
+      {
+        "name": "Seed Drill D246",
+        "type": "seed drill",
+        "price_per_day": 1454,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T379",
+        "type": "tractor",
+        "price_per_day": 4951,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S322",
+        "type": "sprayer",
+        "price_per_day": 1754,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9442879762",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 35,
+    "farmer": "Farmer 35",
+    "equipments": [
+      {
+        "name": "Seed Drill D648",
+        "type": "seed drill",
+        "price_per_day": 2149,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R422",
+        "type": "rotator",
+        "price_per_day": 3792,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S405",
+        "type": "sprayer",
+        "price_per_day": 1929,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9905917161",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 36,
+    "farmer": "Farmer 36",
+    "equipments": [
+      {
+        "name": "Tractor T123",
+        "type": "tractor",
+        "price_per_day": 2129,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Seed Drill D656",
+        "type": "seed drill",
+        "price_per_day": 1871,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H785",
+        "type": "harvester",
+        "price_per_day": 3667,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9087083354",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 37,
+    "farmer": "Farmer 37",
+    "equipments": [
+      {
+        "name": "Tractor T544",
+        "type": "tractor",
+        "price_per_day": 2157,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R986",
+        "type": "rotator",
+        "price_per_day": 1925,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S672",
+        "type": "sprayer",
+        "price_per_day": 312,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Harvester H762",
+        "type": "harvester",
+        "price_per_day": 4909,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9083219251",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 38,
+    "farmer": "Farmer 38",
+    "equipments": [
+      {
+        "name": "Seed Drill D685",
+        "type": "seed drill",
+        "price_per_day": 1170,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H569",
+        "type": "harvester",
+        "price_per_day": 4642,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9957653691",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 39,
+    "farmer": "Farmer 39",
+    "equipments": [
+      {
+        "name": "Harvester H580",
+        "type": "harvester",
+        "price_per_day": 2473,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T475",
+        "type": "tractor",
+        "price_per_day": 2506,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9703355145",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 40,
+    "farmer": "Farmer 40",
+    "equipments": [
+      {
+        "name": "Plough P567",
+        "type": "plough",
+        "price_per_day": 909,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R907",
+        "type": "rotator",
+        "price_per_day": 3033,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9328686457",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 41,
+    "farmer": "Farmer 41",
+    "equipments": [
+      {
+        "name": "Plough P179",
+        "type": "plough",
+        "price_per_day": 1465,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T194",
+        "type": "tractor",
+        "price_per_day": 2473,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R220",
+        "type": "rotator",
+        "price_per_day": 3975,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S624",
+        "type": "sprayer",
+        "price_per_day": 1016,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9506383115",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 42,
+    "farmer": "Farmer 42",
+    "equipments": [
+      {
+        "name": "Seed Drill D194",
+        "type": "seed drill",
+        "price_per_day": 1664,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P338",
+        "type": "plough",
+        "price_per_day": 933,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S316",
+        "type": "sprayer",
+        "price_per_day": 1609,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T481",
+        "type": "tractor",
+        "price_per_day": 4387,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9975519165",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 43,
+    "farmer": "Farmer 43",
+    "equipments": [
+      {
+        "name": "Seed Drill D332",
+        "type": "seed drill",
+        "price_per_day": 1491,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R248",
+        "type": "rotator",
+        "price_per_day": 1514,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Harvester H111",
+        "type": "harvester",
+        "price_per_day": 2086,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T258",
+        "type": "tractor",
+        "price_per_day": 3478,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9644868828",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 44,
+    "farmer": "Farmer 44",
+    "equipments": [
+      {
+        "name": "Harvester H904",
+        "type": "harvester",
+        "price_per_day": 2015,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P292",
+        "type": "plough",
+        "price_per_day": 1212,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R529",
+        "type": "rotator",
+        "price_per_day": 3840,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S812",
+        "type": "sprayer",
+        "price_per_day": 1063,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9626299621",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 45,
+    "farmer": "Farmer 45",
+    "equipments": [
+      {
+        "name": "Sprayer S537",
+        "type": "sprayer",
+        "price_per_day": 1989,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R296",
+        "type": "rotator",
+        "price_per_day": 3448,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T536",
+        "type": "tractor",
+        "price_per_day": 4705,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P884",
+        "type": "plough",
+        "price_per_day": 1009,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9514882397",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 46,
+    "farmer": "Farmer 46",
+    "equipments": [
+      {
+        "name": "Rotator R519",
+        "type": "rotator",
+        "price_per_day": 3523,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Harvester H531",
+        "type": "harvester",
+        "price_per_day": 2168,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S166",
+        "type": "sprayer",
+        "price_per_day": 1275,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T192",
+        "type": "tractor",
+        "price_per_day": 2441,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9664078771",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 47,
+    "farmer": "Farmer 47",
+    "equipments": [
+      {
+        "name": "Rotator R968",
+        "type": "rotator",
+        "price_per_day": 1698,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S320",
+        "type": "sprayer",
+        "price_per_day": 1680,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9973927215",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 48,
+    "farmer": "Farmer 48",
+    "equipments": [
+      {
+        "name": "Tractor T997",
+        "type": "tractor",
+        "price_per_day": 2386,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R683",
+        "type": "rotator",
+        "price_per_day": 3878,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9260285471",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 49,
+    "farmer": "Farmer 49",
+    "equipments": [
+      {
+        "name": "Seed Drill D528",
+        "type": "seed drill",
+        "price_per_day": 1568,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H278",
+        "type": "harvester",
+        "price_per_day": 4602,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P455",
+        "type": "plough",
+        "price_per_day": 860,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9508884605",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 50,
+    "farmer": "Farmer 50",
+    "equipments": [
+      {
+        "name": "Sprayer S275",
+        "type": "sprayer",
+        "price_per_day": 578,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D863",
+        "type": "seed drill",
+        "price_per_day": 2261,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R442",
+        "type": "rotator",
+        "price_per_day": 3115,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T667",
+        "type": "tractor",
+        "price_per_day": 2631,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9829982850",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 51,
+    "farmer": "Farmer 51",
+    "equipments": [
+      {
+        "name": "Sprayer S463",
+        "type": "sprayer",
+        "price_per_day": 486,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D356",
+        "type": "seed drill",
+        "price_per_day": 1977,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T869",
+        "type": "tractor",
+        "price_per_day": 2710,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9876792261",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 52,
+    "farmer": "Farmer 52",
+    "equipments": [
+      {
+        "name": "Sprayer S890",
+        "type": "sprayer",
+        "price_per_day": 1210,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Harvester H362",
+        "type": "harvester",
+        "price_per_day": 4685,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R164",
+        "type": "rotator",
+        "price_per_day": 1099,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9071234524",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 53,
+    "farmer": "Farmer 53",
+    "equipments": [
+      {
+        "name": "Harvester H949",
+        "type": "harvester",
+        "price_per_day": 3548,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R519",
+        "type": "rotator",
+        "price_per_day": 1347,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T153",
+        "type": "tractor",
+        "price_per_day": 3011,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9679915300",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 54,
+    "farmer": "Farmer 54",
+    "equipments": [
+      {
+        "name": "Plough P688",
+        "type": "plough",
+        "price_per_day": 666,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H125",
+        "type": "harvester",
+        "price_per_day": 3682,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9550820470",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 55,
+    "farmer": "Farmer 55",
+    "equipments": [
+      {
+        "name": "Seed Drill D449",
+        "type": "seed drill",
+        "price_per_day": 2117,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S158",
+        "type": "sprayer",
+        "price_per_day": 1399,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Harvester H408",
+        "type": "harvester",
+        "price_per_day": 2646,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9402014243",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 56,
+    "farmer": "Farmer 56",
+    "equipments": [
+      {
+        "name": "Seed Drill D435",
+        "type": "seed drill",
+        "price_per_day": 1084,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P444",
+        "type": "plough",
+        "price_per_day": 662,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9267760049",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 57,
+    "farmer": "Farmer 57",
+    "equipments": [
+      {
+        "name": "Seed Drill D195",
+        "type": "seed drill",
+        "price_per_day": 2759,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R735",
+        "type": "rotator",
+        "price_per_day": 3132,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Harvester H831",
+        "type": "harvester",
+        "price_per_day": 4779,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P337",
+        "type": "plough",
+        "price_per_day": 1037,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9243881288",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 58,
+    "farmer": "Farmer 58",
+    "equipments": [
+      {
+        "name": "Harvester H731",
+        "type": "harvester",
+        "price_per_day": 3100,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P274",
+        "type": "plough",
+        "price_per_day": 850,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9500395566",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 59,
+    "farmer": "Farmer 59",
+    "equipments": [
+      {
+        "name": "Seed Drill D496",
+        "type": "seed drill",
+        "price_per_day": 1140,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H207",
+        "type": "harvester",
+        "price_per_day": 3725,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R911",
+        "type": "rotator",
+        "price_per_day": 3127,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9565398562",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 60,
+    "farmer": "Farmer 60",
+    "equipments": [
+      {
+        "name": "Sprayer S171",
+        "type": "sprayer",
+        "price_per_day": 1479,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R558",
+        "type": "rotator",
+        "price_per_day": 2053,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P184",
+        "type": "plough",
+        "price_per_day": 963,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9640346093",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 61,
+    "farmer": "Farmer 61",
+    "equipments": [
+      {
+        "name": "Rotator R863",
+        "type": "rotator",
+        "price_per_day": 837,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P225",
+        "type": "plough",
+        "price_per_day": 1431,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9686157190",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 62,
+    "farmer": "Farmer 62",
+    "equipments": [
+      {
+        "name": "Tractor T604",
+        "type": "tractor",
+        "price_per_day": 2558,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R108",
+        "type": "rotator",
+        "price_per_day": 3452,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D961",
+        "type": "seed drill",
+        "price_per_day": 1355,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9959606006",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 63,
+    "farmer": "Farmer 63",
+    "equipments": [
+      {
+        "name": "Harvester H914",
+        "type": "harvester",
+        "price_per_day": 2374,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P999",
+        "type": "plough",
+        "price_per_day": 829,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T954",
+        "type": "tractor",
+        "price_per_day": 4580,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R195",
+        "type": "rotator",
+        "price_per_day": 2124,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9750824517",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 64,
+    "farmer": "Farmer 64",
+    "equipments": [
+      {
+        "name": "Tractor T509",
+        "type": "tractor",
+        "price_per_day": 4063,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Seed Drill D246",
+        "type": "seed drill",
+        "price_per_day": 1747,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9501959821",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 65,
+    "farmer": "Farmer 65",
+    "equipments": [
+      {
+        "name": "Harvester H164",
+        "type": "harvester",
+        "price_per_day": 2927,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D798",
+        "type": "seed drill",
+        "price_per_day": 2111,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S794",
+        "type": "sprayer",
+        "price_per_day": 585,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P248",
+        "type": "plough",
+        "price_per_day": 581,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9200522276",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 66,
+    "farmer": "Farmer 66",
+    "equipments": [
+      {
+        "name": "Tractor T177",
+        "type": "tractor",
+        "price_per_day": 4340,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R519",
+        "type": "rotator",
+        "price_per_day": 2634,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P160",
+        "type": "plough",
+        "price_per_day": 1145,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H765",
+        "type": "harvester",
+        "price_per_day": 3973,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9059445979",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 67,
+    "farmer": "Farmer 67",
+    "equipments": [
+      {
+        "name": "Harvester H316",
+        "type": "harvester",
+        "price_per_day": 2457,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T884",
+        "type": "tractor",
+        "price_per_day": 4444,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9231974278",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 68,
+    "farmer": "Farmer 68",
+    "equipments": [
+      {
+        "name": "Plough P308",
+        "type": "plough",
+        "price_per_day": 599,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H852",
+        "type": "harvester",
+        "price_per_day": 3936,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D560",
+        "type": "seed drill",
+        "price_per_day": 1157,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R362",
+        "type": "rotator",
+        "price_per_day": 1601,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9594589522",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 69,
+    "farmer": "Farmer 69",
+    "equipments": [
+      {
+        "name": "Plough P403",
+        "type": "plough",
+        "price_per_day": 581,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R123",
+        "type": "rotator",
+        "price_per_day": 1688,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9717940937",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 70,
+    "farmer": "Farmer 70",
+    "equipments": [
+      {
+        "name": "Tractor T972",
+        "type": "tractor",
+        "price_per_day": 3546,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R190",
+        "type": "rotator",
+        "price_per_day": 3399,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D946",
+        "type": "seed drill",
+        "price_per_day": 2426,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H691",
+        "type": "harvester",
+        "price_per_day": 3641,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9804064359",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 71,
+    "farmer": "Farmer 71",
+    "equipments": [
+      {
+        "name": "Harvester H399",
+        "type": "harvester",
+        "price_per_day": 3407,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R758",
+        "type": "rotator",
+        "price_per_day": 1727,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9089968238",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 72,
+    "farmer": "Farmer 72",
+    "equipments": [
+      {
+        "name": "Rotator R105",
+        "type": "rotator",
+        "price_per_day": 3432,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Harvester H696",
+        "type": "harvester",
+        "price_per_day": 3389,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D167",
+        "type": "seed drill",
+        "price_per_day": 2900,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9742224819",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 73,
+    "farmer": "Farmer 73",
+    "equipments": [
+      {
+        "name": "Sprayer S795",
+        "type": "sprayer",
+        "price_per_day": 1460,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P851",
+        "type": "plough",
+        "price_per_day": 1036,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T724",
+        "type": "tractor",
+        "price_per_day": 1502,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H490",
+        "type": "harvester",
+        "price_per_day": 2986,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9471272015",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 74,
+    "farmer": "Farmer 74",
+    "equipments": [
+      {
+        "name": "Sprayer S963",
+        "type": "sprayer",
+        "price_per_day": 716,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D749",
+        "type": "seed drill",
+        "price_per_day": 1068,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9447292540",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 75,
+    "farmer": "Farmer 75",
+    "equipments": [
+      {
+        "name": "Rotator R248",
+        "type": "rotator",
+        "price_per_day": 3656,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P529",
+        "type": "plough",
+        "price_per_day": 812,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9955715314",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 76,
+    "farmer": "Farmer 76",
+    "equipments": [
+      {
+        "name": "Seed Drill D789",
+        "type": "seed drill",
+        "price_per_day": 1418,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R634",
+        "type": "rotator",
+        "price_per_day": 3751,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Harvester H190",
+        "type": "harvester",
+        "price_per_day": 2367,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P276",
+        "type": "plough",
+        "price_per_day": 775,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9077668649",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 77,
+    "farmer": "Farmer 77",
+    "equipments": [
+      {
+        "name": "Harvester H896",
+        "type": "harvester",
+        "price_per_day": 4365,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R808",
+        "type": "rotator",
+        "price_per_day": 2893,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S924",
+        "type": "sprayer",
+        "price_per_day": 881,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9203708764",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 78,
+    "farmer": "Farmer 78",
+    "equipments": [
+      {
+        "name": "Rotator R492",
+        "type": "rotator",
+        "price_per_day": 3323,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T113",
+        "type": "tractor",
+        "price_per_day": 2297,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S887",
+        "type": "sprayer",
+        "price_per_day": 1490,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P229",
+        "type": "plough",
+        "price_per_day": 579,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9314298114",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 79,
+    "farmer": "Farmer 79",
+    "equipments": [
+      {
+        "name": "Seed Drill D561",
+        "type": "seed drill",
+        "price_per_day": 2148,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P749",
+        "type": "plough",
+        "price_per_day": 1356,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H488",
+        "type": "harvester",
+        "price_per_day": 2317,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9460732674",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 80,
+    "farmer": "Farmer 80",
+    "equipments": [
+      {
+        "name": "Sprayer S228",
+        "type": "sprayer",
+        "price_per_day": 1629,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D420",
+        "type": "seed drill",
+        "price_per_day": 2545,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R772",
+        "type": "rotator",
+        "price_per_day": 868,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9635071826",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 81,
+    "farmer": "Farmer 81",
+    "equipments": [
+      {
+        "name": "Tractor T780",
+        "type": "tractor",
+        "price_per_day": 3389,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P864",
+        "type": "plough",
+        "price_per_day": 1250,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S396",
+        "type": "sprayer",
+        "price_per_day": 1560,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9176890234",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 82,
+    "farmer": "Farmer 82",
+    "equipments": [
+      {
+        "name": "Plough P160",
+        "type": "plough",
+        "price_per_day": 571,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R262",
+        "type": "rotator",
+        "price_per_day": 2133,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T222",
+        "type": "tractor",
+        "price_per_day": 4902,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9456075091",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 83,
+    "farmer": "Farmer 83",
+    "equipments": [
+      {
+        "name": "Rotator R196",
+        "type": "rotator",
+        "price_per_day": 1982,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T679",
+        "type": "tractor",
+        "price_per_day": 3820,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9660151019",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 84,
+    "farmer": "Farmer 84",
+    "equipments": [
+      {
+        "name": "Harvester H176",
+        "type": "harvester",
+        "price_per_day": 3657,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R734",
+        "type": "rotator",
+        "price_per_day": 1201,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9649588974",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 85,
+    "farmer": "Farmer 85",
+    "equipments": [
+      {
+        "name": "Harvester H329",
+        "type": "harvester",
+        "price_per_day": 2158,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R603",
+        "type": "rotator",
+        "price_per_day": 2649,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P783",
+        "type": "plough",
+        "price_per_day": 535,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T124",
+        "type": "tractor",
+        "price_per_day": 2639,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9378025652",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 86,
+    "farmer": "Farmer 86",
+    "equipments": [
+      {
+        "name": "Seed Drill D945",
+        "type": "seed drill",
+        "price_per_day": 1838,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S873",
+        "type": "sprayer",
+        "price_per_day": 1921,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R935",
+        "type": "rotator",
+        "price_per_day": 1017,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Harvester H120",
+        "type": "harvester",
+        "price_per_day": 2998,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9463133699",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 87,
+    "farmer": "Farmer 87",
+    "equipments": [
+      {
+        "name": "Plough P278",
+        "type": "plough",
+        "price_per_day": 758,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H117",
+        "type": "harvester",
+        "price_per_day": 3521,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9460240190",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 88,
+    "farmer": "Farmer 88",
+    "equipments": [
+      {
+        "name": "Plough P204",
+        "type": "plough",
+        "price_per_day": 585,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D852",
+        "type": "seed drill",
+        "price_per_day": 2943,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9711534628",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 89,
+    "farmer": "Farmer 89",
+    "equipments": [
+      {
+        "name": "Seed Drill D920",
+        "type": "seed drill",
+        "price_per_day": 1836,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H920",
+        "type": "harvester",
+        "price_per_day": 2702,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T572",
+        "type": "tractor",
+        "price_per_day": 4327,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9310603732",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 90,
+    "farmer": "Farmer 90",
+    "equipments": [
+      {
+        "name": "Harvester H118",
+        "type": "harvester",
+        "price_per_day": 3050,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D958",
+        "type": "seed drill",
+        "price_per_day": 2900,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9119060240",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 91,
+    "farmer": "Farmer 91",
+    "equipments": [
+      {
+        "name": "Harvester H232",
+        "type": "harvester",
+        "price_per_day": 3255,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S894",
+        "type": "sprayer",
+        "price_per_day": 1598,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T217",
+        "type": "tractor",
+        "price_per_day": 4648,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9326375066",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 92,
+    "farmer": "Farmer 92",
+    "equipments": [
+      {
+        "name": "Sprayer S245",
+        "type": "sprayer",
+        "price_per_day": 1962,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P265",
+        "type": "plough",
+        "price_per_day": 663,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9956929621",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 93,
+    "farmer": "Farmer 93",
+    "equipments": [
+      {
+        "name": "Sprayer S924",
+        "type": "sprayer",
+        "price_per_day": 525,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D445",
+        "type": "seed drill",
+        "price_per_day": 1206,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T907",
+        "type": "tractor",
+        "price_per_day": 3546,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P530",
+        "type": "plough",
+        "price_per_day": 840,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9344490621",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 94,
+    "farmer": "Farmer 94",
+    "equipments": [
+      {
+        "name": "Harvester H613",
+        "type": "harvester",
+        "price_per_day": 4806,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T296",
+        "type": "tractor",
+        "price_per_day": 4823,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9716874516",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 95,
+    "farmer": "Farmer 95",
+    "equipments": [
+      {
+        "name": "Harvester H337",
+        "type": "harvester",
+        "price_per_day": 4935,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D692",
+        "type": "seed drill",
+        "price_per_day": 1009,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S201",
+        "type": "sprayer",
+        "price_per_day": 495,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9309020694",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 96,
+    "farmer": "Farmer 96",
+    "equipments": [
+      {
+        "name": "Plough P663",
+        "type": "plough",
+        "price_per_day": 553,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T570",
+        "type": "tractor",
+        "price_per_day": 4007,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H539",
+        "type": "harvester",
+        "price_per_day": 2268,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R793",
+        "type": "rotator",
+        "price_per_day": 3804,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9623258156",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 97,
+    "farmer": "Farmer 97",
+    "equipments": [
+      {
+        "name": "Harvester H434",
+        "type": "harvester",
+        "price_per_day": 2366,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T947",
+        "type": "tractor",
+        "price_per_day": 3441,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Seed Drill D780",
+        "type": "seed drill",
+        "price_per_day": 1152,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9253350011",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 98,
+    "farmer": "Farmer 98",
+    "equipments": [
+      {
+        "name": "Harvester H988",
+        "type": "harvester",
+        "price_per_day": 2977,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D148",
+        "type": "seed drill",
+        "price_per_day": 2383,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S145",
+        "type": "sprayer",
+        "price_per_day": 872,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P876",
+        "type": "plough",
+        "price_per_day": 1440,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9970719710",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 99,
+    "farmer": "Farmer 99",
+    "equipments": [
+      {
+        "name": "Plough P614",
+        "type": "plough",
+        "price_per_day": 648,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T479",
+        "type": "tractor",
+        "price_per_day": 4989,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R510",
+        "type": "rotator",
+        "price_per_day": 2565,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9100675665",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 100,
+    "farmer": "Farmer 100",
+    "equipments": [
+      {
+        "name": "Tractor T435",
+        "type": "tractor",
+        "price_per_day": 2910,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Seed Drill D635",
+        "type": "seed drill",
+        "price_per_day": 2172,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S923",
+        "type": "sprayer",
+        "price_per_day": 420,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9434845909",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 101,
+    "farmer": "Farmer 101",
+    "equipments": [
+      {
+        "name": "Rotator R152",
+        "type": "rotator",
+        "price_per_day": 2289,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P531",
+        "type": "plough",
+        "price_per_day": 1462,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D310",
+        "type": "seed drill",
+        "price_per_day": 1751,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S282",
+        "type": "sprayer",
+        "price_per_day": 1256,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9481344029",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 102,
+    "farmer": "Farmer 102",
+    "equipments": [
+      {
+        "name": "Sprayer S105",
+        "type": "sprayer",
+        "price_per_day": 883,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T335",
+        "type": "tractor",
+        "price_per_day": 4939,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R486",
+        "type": "rotator",
+        "price_per_day": 3644,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D179",
+        "type": "seed drill",
+        "price_per_day": 1103,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9348574481",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 103,
+    "farmer": "Farmer 103",
+    "equipments": [
+      {
+        "name": "Rotator R701",
+        "type": "rotator",
+        "price_per_day": 1237,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P950",
+        "type": "plough",
+        "price_per_day": 772,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9175302126",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 104,
+    "farmer": "Farmer 104",
+    "equipments": [
+      {
+        "name": "Sprayer S361",
+        "type": "sprayer",
+        "price_per_day": 1058,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T537",
+        "type": "tractor",
+        "price_per_day": 4550,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R596",
+        "type": "rotator",
+        "price_per_day": 2187,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9111586407",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 105,
+    "farmer": "Farmer 105",
+    "equipments": [
+      {
+        "name": "Sprayer S881",
+        "type": "sprayer",
+        "price_per_day": 301,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D125",
+        "type": "seed drill",
+        "price_per_day": 1507,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T788",
+        "type": "tractor",
+        "price_per_day": 3975,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P976",
+        "type": "plough",
+        "price_per_day": 1011,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9928568913",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 106,
+    "farmer": "Farmer 106",
+    "equipments": [
+      {
+        "name": "Tractor T802",
+        "type": "tractor",
+        "price_per_day": 3693,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R815",
+        "type": "rotator",
+        "price_per_day": 3160,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9785695934",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 107,
+    "farmer": "Farmer 107",
+    "equipments": [
+      {
+        "name": "Plough P426",
+        "type": "plough",
+        "price_per_day": 994,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S784",
+        "type": "sprayer",
+        "price_per_day": 818,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R234",
+        "type": "rotator",
+        "price_per_day": 1180,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D496",
+        "type": "seed drill",
+        "price_per_day": 2348,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9880580229",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 108,
+    "farmer": "Farmer 108",
+    "equipments": [
+      {
+        "name": "Plough P288",
+        "type": "plough",
+        "price_per_day": 972,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R573",
+        "type": "rotator",
+        "price_per_day": 2849,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9456015472",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 109,
+    "farmer": "Farmer 109",
+    "equipments": [
+      {
+        "name": "Sprayer S258",
+        "type": "sprayer",
+        "price_per_day": 611,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T964",
+        "type": "tractor",
+        "price_per_day": 4916,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9261241364",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 110,
+    "farmer": "Farmer 110",
+    "equipments": [
+      {
+        "name": "Seed Drill D798",
+        "type": "seed drill",
+        "price_per_day": 2067,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R406",
+        "type": "rotator",
+        "price_per_day": 3821,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S816",
+        "type": "sprayer",
+        "price_per_day": 1890,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P963",
+        "type": "plough",
+        "price_per_day": 1312,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9206013535",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 111,
+    "farmer": "Farmer 111",
+    "equipments": [
+      {
+        "name": "Plough P607",
+        "type": "plough",
+        "price_per_day": 1261,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T679",
+        "type": "tractor",
+        "price_per_day": 2943,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9200870706",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 112,
+    "farmer": "Farmer 112",
+    "equipments": [
+      {
+        "name": "Sprayer S415",
+        "type": "sprayer",
+        "price_per_day": 564,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P605",
+        "type": "plough",
+        "price_per_day": 905,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R754",
+        "type": "rotator",
+        "price_per_day": 1072,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T260",
+        "type": "tractor",
+        "price_per_day": 1613,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9047099654",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 113,
+    "farmer": "Farmer 113",
+    "equipments": [
+      {
+        "name": "Tractor T113",
+        "type": "tractor",
+        "price_per_day": 3188,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Seed Drill D310",
+        "type": "seed drill",
+        "price_per_day": 2430,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9266058328",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 114,
+    "farmer": "Farmer 114",
+    "equipments": [
+      {
+        "name": "Sprayer S750",
+        "type": "sprayer",
+        "price_per_day": 377,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D314",
+        "type": "seed drill",
+        "price_per_day": 1625,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T724",
+        "type": "tractor",
+        "price_per_day": 1743,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R732",
+        "type": "rotator",
+        "price_per_day": 1698,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9913789295",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 115,
+    "farmer": "Farmer 115",
+    "equipments": [
+      {
+        "name": "Tractor T558",
+        "type": "tractor",
+        "price_per_day": 4143,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H189",
+        "type": "harvester",
+        "price_per_day": 3736,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R499",
+        "type": "rotator",
+        "price_per_day": 3875,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9486624616",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 116,
+    "farmer": "Farmer 116",
+    "equipments": [
+      {
+        "name": "Harvester H936",
+        "type": "harvester",
+        "price_per_day": 2550,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S457",
+        "type": "sprayer",
+        "price_per_day": 1647,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9409535332",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 117,
+    "farmer": "Farmer 117",
+    "equipments": [
+      {
+        "name": "Plough P665",
+        "type": "plough",
+        "price_per_day": 544,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H268",
+        "type": "harvester",
+        "price_per_day": 3315,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R676",
+        "type": "rotator",
+        "price_per_day": 2571,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9744087657",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 118,
+    "farmer": "Farmer 118",
+    "equipments": [
+      {
+        "name": "Tractor T821",
+        "type": "tractor",
+        "price_per_day": 4605,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S318",
+        "type": "sprayer",
+        "price_per_day": 473,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D402",
+        "type": "seed drill",
+        "price_per_day": 1907,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R601",
+        "type": "rotator",
+        "price_per_day": 1278,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9316815516",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 119,
+    "farmer": "Farmer 119",
+    "equipments": [
+      {
+        "name": "Tractor T507",
+        "type": "tractor",
+        "price_per_day": 3643,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R443",
+        "type": "rotator",
+        "price_per_day": 3513,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P256",
+        "type": "plough",
+        "price_per_day": 872,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9533411889",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 120,
+    "farmer": "Farmer 120",
+    "equipments": [
+      {
+        "name": "Harvester H915",
+        "type": "harvester",
+        "price_per_day": 3820,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P494",
+        "type": "plough",
+        "price_per_day": 1317,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D403",
+        "type": "seed drill",
+        "price_per_day": 1681,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9098268877",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 121,
+    "farmer": "Farmer 121",
+    "equipments": [
+      {
+        "name": "Seed Drill D928",
+        "type": "seed drill",
+        "price_per_day": 1724,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S896",
+        "type": "sprayer",
+        "price_per_day": 560,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9295336705",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 122,
+    "farmer": "Farmer 122",
+    "equipments": [
+      {
+        "name": "Rotator R932",
+        "type": "rotator",
+        "price_per_day": 2036,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S253",
+        "type": "sprayer",
+        "price_per_day": 709,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Harvester H285",
+        "type": "harvester",
+        "price_per_day": 3961,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D859",
+        "type": "seed drill",
+        "price_per_day": 1545,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9876824819",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 123,
+    "farmer": "Farmer 123",
+    "equipments": [
+      {
+        "name": "Tractor T189",
+        "type": "tractor",
+        "price_per_day": 2422,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H139",
+        "type": "harvester",
+        "price_per_day": 2677,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S133",
+        "type": "sprayer",
+        "price_per_day": 896,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9239902735",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 124,
+    "farmer": "Farmer 124",
+    "equipments": [
+      {
+        "name": "Harvester H695",
+        "type": "harvester",
+        "price_per_day": 4382,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D860",
+        "type": "seed drill",
+        "price_per_day": 1320,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T896",
+        "type": "tractor",
+        "price_per_day": 3515,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9511652376",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 125,
+    "farmer": "Farmer 125",
+    "equipments": [
+      {
+        "name": "Tractor T440",
+        "type": "tractor",
+        "price_per_day": 4795,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P165",
+        "type": "plough",
+        "price_per_day": 587,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D250",
+        "type": "seed drill",
+        "price_per_day": 1556,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9328930846",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 126,
+    "farmer": "Farmer 126",
+    "equipments": [
+      {
+        "name": "Sprayer S346",
+        "type": "sprayer",
+        "price_per_day": 461,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R341",
+        "type": "rotator",
+        "price_per_day": 1248,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Harvester H817",
+        "type": "harvester",
+        "price_per_day": 4768,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D476",
+        "type": "seed drill",
+        "price_per_day": 1562,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9471326781",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 127,
+    "farmer": "Farmer 127",
+    "equipments": [
+      {
+        "name": "Harvester H879",
+        "type": "harvester",
+        "price_per_day": 4476,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R460",
+        "type": "rotator",
+        "price_per_day": 2594,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9735777129",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 128,
+    "farmer": "Farmer 128",
+    "equipments": [
+      {
+        "name": "Sprayer S766",
+        "type": "sprayer",
+        "price_per_day": 493,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T765",
+        "type": "tractor",
+        "price_per_day": 3811,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H343",
+        "type": "harvester",
+        "price_per_day": 4250,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D252",
+        "type": "seed drill",
+        "price_per_day": 1483,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9927421050",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 129,
+    "farmer": "Farmer 129",
+    "equipments": [
+      {
+        "name": "Seed Drill D690",
+        "type": "seed drill",
+        "price_per_day": 1652,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R134",
+        "type": "rotator",
+        "price_per_day": 1979,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S966",
+        "type": "sprayer",
+        "price_per_day": 1655,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T291",
+        "type": "tractor",
+        "price_per_day": 3240,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9821031446",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 130,
+    "farmer": "Farmer 130",
+    "equipments": [
+      {
+        "name": "Harvester H208",
+        "type": "harvester",
+        "price_per_day": 2588,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T730",
+        "type": "tractor",
+        "price_per_day": 2452,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9723679210",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 131,
+    "farmer": "Farmer 131",
+    "equipments": [
+      {
+        "name": "Tractor T780",
+        "type": "tractor",
+        "price_per_day": 2731,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P493",
+        "type": "plough",
+        "price_per_day": 1062,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9747833353",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 132,
+    "farmer": "Farmer 132",
+    "equipments": [
+      {
+        "name": "Plough P500",
+        "type": "plough",
+        "price_per_day": 600,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S162",
+        "type": "sprayer",
+        "price_per_day": 1824,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9436460447",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 133,
+    "farmer": "Farmer 133",
+    "equipments": [
+      {
+        "name": "Plough P148",
+        "type": "plough",
+        "price_per_day": 716,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R730",
+        "type": "rotator",
+        "price_per_day": 2107,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D446",
+        "type": "seed drill",
+        "price_per_day": 1463,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9096590212",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 134,
+    "farmer": "Farmer 134",
+    "equipments": [
+      {
+        "name": "Rotator R138",
+        "type": "rotator",
+        "price_per_day": 1680,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P762",
+        "type": "plough",
+        "price_per_day": 1458,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9807538109",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 135,
+    "farmer": "Farmer 135",
+    "equipments": [
+      {
+        "name": "Sprayer S660",
+        "type": "sprayer",
+        "price_per_day": 1454,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P377",
+        "type": "plough",
+        "price_per_day": 883,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9627133184",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 136,
+    "farmer": "Farmer 136",
+    "equipments": [
+      {
+        "name": "Seed Drill D769",
+        "type": "seed drill",
+        "price_per_day": 1398,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P475",
+        "type": "plough",
+        "price_per_day": 1026,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9407163522",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 137,
+    "farmer": "Farmer 137",
+    "equipments": [
+      {
+        "name": "Plough P222",
+        "type": "plough",
+        "price_per_day": 566,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D667",
+        "type": "seed drill",
+        "price_per_day": 2557,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H451",
+        "type": "harvester",
+        "price_per_day": 4308,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9701678653",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 138,
+    "farmer": "Farmer 138",
+    "equipments": [
+      {
+        "name": "Seed Drill D661",
+        "type": "seed drill",
+        "price_per_day": 2174,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S822",
+        "type": "sprayer",
+        "price_per_day": 1883,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T540",
+        "type": "tractor",
+        "price_per_day": 4339,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H240",
+        "type": "harvester",
+        "price_per_day": 2574,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9397096365",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 139,
+    "farmer": "Farmer 139",
+    "equipments": [
+      {
+        "name": "Seed Drill D527",
+        "type": "seed drill",
+        "price_per_day": 2293,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H961",
+        "type": "harvester",
+        "price_per_day": 4130,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T397",
+        "type": "tractor",
+        "price_per_day": 3244,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S983",
+        "type": "sprayer",
+        "price_per_day": 1442,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9674428270",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 140,
+    "farmer": "Farmer 140",
+    "equipments": [
+      {
+        "name": "Sprayer S836",
+        "type": "sprayer",
+        "price_per_day": 1195,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P948",
+        "type": "plough",
+        "price_per_day": 653,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9525341656",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 141,
+    "farmer": "Farmer 141",
+    "equipments": [
+      {
+        "name": "Plough P441",
+        "type": "plough",
+        "price_per_day": 1344,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H864",
+        "type": "harvester",
+        "price_per_day": 2956,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9496005277",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 142,
+    "farmer": "Farmer 142",
+    "equipments": [
+      {
+        "name": "Tractor T473",
+        "type": "tractor",
+        "price_per_day": 2157,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S575",
+        "type": "sprayer",
+        "price_per_day": 764,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9382570783",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 143,
+    "farmer": "Farmer 143",
+    "equipments": [
+      {
+        "name": "Harvester H523",
+        "type": "harvester",
+        "price_per_day": 2420,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S229",
+        "type": "sprayer",
+        "price_per_day": 980,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P188",
+        "type": "plough",
+        "price_per_day": 872,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T158",
+        "type": "tractor",
+        "price_per_day": 3113,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9371231867",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 144,
+    "farmer": "Farmer 144",
+    "equipments": [
+      {
+        "name": "Rotator R352",
+        "type": "rotator",
+        "price_per_day": 1916,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T833",
+        "type": "tractor",
+        "price_per_day": 2927,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9823514675",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 145,
+    "farmer": "Farmer 145",
+    "equipments": [
+      {
+        "name": "Harvester H853",
+        "type": "harvester",
+        "price_per_day": 4334,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P366",
+        "type": "plough",
+        "price_per_day": 920,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9813243718",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 146,
+    "farmer": "Farmer 146",
+    "equipments": [
+      {
+        "name": "Tractor T768",
+        "type": "tractor",
+        "price_per_day": 4281,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R848",
+        "type": "rotator",
+        "price_per_day": 2084,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P946",
+        "type": "plough",
+        "price_per_day": 1196,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9367523359",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 147,
+    "farmer": "Farmer 147",
+    "equipments": [
+      {
+        "name": "Harvester H530",
+        "type": "harvester",
+        "price_per_day": 4498,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S968",
+        "type": "sprayer",
+        "price_per_day": 1081,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9384370783",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 148,
+    "farmer": "Farmer 148",
+    "equipments": [
+      {
+        "name": "Rotator R322",
+        "type": "rotator",
+        "price_per_day": 1198,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D841",
+        "type": "seed drill",
+        "price_per_day": 2499,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P808",
+        "type": "plough",
+        "price_per_day": 1224,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9759368694",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 149,
+    "farmer": "Farmer 149",
+    "equipments": [
+      {
+        "name": "Rotator R471",
+        "type": "rotator",
+        "price_per_day": 2292,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P160",
+        "type": "plough",
+        "price_per_day": 747,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9950889911",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 150,
+    "farmer": "Farmer 150",
+    "equipments": [
+      {
+        "name": "Seed Drill D593",
+        "type": "seed drill",
+        "price_per_day": 2924,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P248",
+        "type": "plough",
+        "price_per_day": 1452,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9674090684",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 151,
+    "farmer": "Farmer 151",
+    "equipments": [
+      {
+        "name": "Sprayer S660",
+        "type": "sprayer",
+        "price_per_day": 665,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T320",
+        "type": "tractor",
+        "price_per_day": 2173,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H319",
+        "type": "harvester",
+        "price_per_day": 4038,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9378087277",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 152,
+    "farmer": "Farmer 152",
+    "equipments": [
+      {
+        "name": "Tractor T972",
+        "type": "tractor",
+        "price_per_day": 2670,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S552",
+        "type": "sprayer",
+        "price_per_day": 1997,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9391765377",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 153,
+    "farmer": "Farmer 153",
+    "equipments": [
+      {
+        "name": "Plough P798",
+        "type": "plough",
+        "price_per_day": 1458,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T649",
+        "type": "tractor",
+        "price_per_day": 3757,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R193",
+        "type": "rotator",
+        "price_per_day": 1320,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D643",
+        "type": "seed drill",
+        "price_per_day": 2143,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9590801766",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 154,
+    "farmer": "Farmer 154",
+    "equipments": [
+      {
+        "name": "Sprayer S636",
+        "type": "sprayer",
+        "price_per_day": 776,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Harvester H182",
+        "type": "harvester",
+        "price_per_day": 4187,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T341",
+        "type": "tractor",
+        "price_per_day": 3338,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9874493875",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 155,
+    "farmer": "Farmer 155",
+    "equipments": [
+      {
+        "name": "Sprayer S935",
+        "type": "sprayer",
+        "price_per_day": 678,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P802",
+        "type": "plough",
+        "price_per_day": 773,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D669",
+        "type": "seed drill",
+        "price_per_day": 2552,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9117823902",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 156,
+    "farmer": "Farmer 156",
+    "equipments": [
+      {
+        "name": "Seed Drill D412",
+        "type": "seed drill",
+        "price_per_day": 1945,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Harvester H686",
+        "type": "harvester",
+        "price_per_day": 2625,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9425603869",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 157,
+    "farmer": "Farmer 157",
+    "equipments": [
+      {
+        "name": "Seed Drill D901",
+        "type": "seed drill",
+        "price_per_day": 2460,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R675",
+        "type": "rotator",
+        "price_per_day": 3658,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Harvester H607",
+        "type": "harvester",
+        "price_per_day": 3833,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T634",
+        "type": "tractor",
+        "price_per_day": 3001,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9216567818",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 158,
+    "farmer": "Farmer 158",
+    "equipments": [
+      {
+        "name": "Sprayer S445",
+        "type": "sprayer",
+        "price_per_day": 732,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R165",
+        "type": "rotator",
+        "price_per_day": 1497,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T313",
+        "type": "tractor",
+        "price_per_day": 4121,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9956020454",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 159,
+    "farmer": "Farmer 159",
+    "equipments": [
+      {
+        "name": "Plough P107",
+        "type": "plough",
+        "price_per_day": 509,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R618",
+        "type": "rotator",
+        "price_per_day": 1348,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T148",
+        "type": "tractor",
+        "price_per_day": 2805,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H102",
+        "type": "harvester",
+        "price_per_day": 2442,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9241729946",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 160,
+    "farmer": "Farmer 160",
+    "equipments": [
+      {
+        "name": "Harvester H393",
+        "type": "harvester",
+        "price_per_day": 2837,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T577",
+        "type": "tractor",
+        "price_per_day": 2988,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9098798907",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 161,
+    "farmer": "Farmer 161",
+    "equipments": [
+      {
+        "name": "Rotator R769",
+        "type": "rotator",
+        "price_per_day": 2187,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S833",
+        "type": "sprayer",
+        "price_per_day": 955,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9563725162",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 162,
+    "farmer": "Farmer 162",
+    "equipments": [
+      {
+        "name": "Sprayer S169",
+        "type": "sprayer",
+        "price_per_day": 1076,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P388",
+        "type": "plough",
+        "price_per_day": 1430,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9787247260",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 163,
+    "farmer": "Farmer 163",
+    "equipments": [
+      {
+        "name": "Seed Drill D212",
+        "type": "seed drill",
+        "price_per_day": 2577,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P512",
+        "type": "plough",
+        "price_per_day": 664,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9591480825",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 164,
+    "farmer": "Farmer 164",
+    "equipments": [
+      {
+        "name": "Plough P430",
+        "type": "plough",
+        "price_per_day": 837,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D433",
+        "type": "seed drill",
+        "price_per_day": 2796,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T429",
+        "type": "tractor",
+        "price_per_day": 3666,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H753",
+        "type": "harvester",
+        "price_per_day": 3736,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9038123671",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 165,
+    "farmer": "Farmer 165",
+    "equipments": [
+      {
+        "name": "Rotator R116",
+        "type": "rotator",
+        "price_per_day": 1488,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Plough P911",
+        "type": "plough",
+        "price_per_day": 1264,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Tractor T511",
+        "type": "tractor",
+        "price_per_day": 3142,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S227",
+        "type": "sprayer",
+        "price_per_day": 1001,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9183212800",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 166,
+    "farmer": "Farmer 166",
+    "equipments": [
+      {
+        "name": "Seed Drill D848",
+        "type": "seed drill",
+        "price_per_day": 2305,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S173",
+        "type": "sprayer",
+        "price_per_day": 1808,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R474",
+        "type": "rotator",
+        "price_per_day": 3467,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9427161344",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 167,
+    "farmer": "Farmer 167",
+    "equipments": [
+      {
+        "name": "Rotator R896",
+        "type": "rotator",
+        "price_per_day": 3940,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T961",
+        "type": "tractor",
+        "price_per_day": 3089,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H341",
+        "type": "harvester",
+        "price_per_day": 2280,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D658",
+        "type": "seed drill",
+        "price_per_day": 2041,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9072717512",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 168,
+    "farmer": "Farmer 168",
+    "equipments": [
+      {
+        "name": "Plough P837",
+        "type": "plough",
+        "price_per_day": 918,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D956",
+        "type": "seed drill",
+        "price_per_day": 2142,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T251",
+        "type": "tractor",
+        "price_per_day": 1733,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9205959128",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 169,
+    "farmer": "Farmer 169",
+    "equipments": [
+      {
+        "name": "Tractor T945",
+        "type": "tractor",
+        "price_per_day": 1940,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Harvester H867",
+        "type": "harvester",
+        "price_per_day": 4759,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D807",
+        "type": "seed drill",
+        "price_per_day": 2192,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9301258204",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 170,
+    "farmer": "Farmer 170",
+    "equipments": [
+      {
+        "name": "Sprayer S320",
+        "type": "sprayer",
+        "price_per_day": 1715,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Plough P857",
+        "type": "plough",
+        "price_per_day": 508,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Harvester H739",
+        "type": "harvester",
+        "price_per_day": 4973,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R251",
+        "type": "rotator",
+        "price_per_day": 2584,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9459666868",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 171,
+    "farmer": "Farmer 171",
+    "equipments": [
+      {
+        "name": "Harvester H900",
+        "type": "harvester",
+        "price_per_day": 2990,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Rotator R829",
+        "type": "rotator",
+        "price_per_day": 3825,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D774",
+        "type": "seed drill",
+        "price_per_day": 2071,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S103",
+        "type": "sprayer",
+        "price_per_day": 642,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9029396541",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 172,
+    "farmer": "Farmer 172",
+    "equipments": [
+      {
+        "name": "Harvester H490",
+        "type": "harvester",
+        "price_per_day": 3403,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S136",
+        "type": "sprayer",
+        "price_per_day": 1415,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T488",
+        "type": "tractor",
+        "price_per_day": 3955,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9022824949",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 173,
+    "farmer": "Farmer 173",
+    "equipments": [
+      {
+        "name": "Sprayer S456",
+        "type": "sprayer",
+        "price_per_day": 1160,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T599",
+        "type": "tractor",
+        "price_per_day": 4238,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9485390995",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 174,
+    "farmer": "Farmer 174",
+    "equipments": [
+      {
+        "name": "Sprayer S601",
+        "type": "sprayer",
+        "price_per_day": 955,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T270",
+        "type": "tractor",
+        "price_per_day": 3411,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P882",
+        "type": "plough",
+        "price_per_day": 1348,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D291",
+        "type": "seed drill",
+        "price_per_day": 2737,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9383574555",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 175,
+    "farmer": "Farmer 175",
+    "equipments": [
+      {
+        "name": "Tractor T305",
+        "type": "tractor",
+        "price_per_day": 2325,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S757",
+        "type": "sprayer",
+        "price_per_day": 622,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D896",
+        "type": "seed drill",
+        "price_per_day": 1903,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9767856101",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 176,
+    "farmer": "Farmer 176",
+    "equipments": [
+      {
+        "name": "Harvester H262",
+        "type": "harvester",
+        "price_per_day": 3042,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D883",
+        "type": "seed drill",
+        "price_per_day": 2290,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S366",
+        "type": "sprayer",
+        "price_per_day": 660,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R289",
+        "type": "rotator",
+        "price_per_day": 1307,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9218692335",
+    "location": "Bhopal, Madhya Pradesh"
+  },
+  {
+    "id": 177,
+    "farmer": "Farmer 177",
+    "equipments": [
+      {
+        "name": "Rotator R456",
+        "type": "rotator",
+        "price_per_day": 852,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T789",
+        "type": "tractor",
+        "price_per_day": 3834,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9075252116",
+    "location": "Indore, Madhya Pradesh"
+  },
+  {
+    "id": 178,
+    "farmer": "Farmer 178",
+    "equipments": [
+      {
+        "name": "Sprayer S829",
+        "type": "sprayer",
+        "price_per_day": 1373,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T306",
+        "type": "tractor",
+        "price_per_day": 3977,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Seed Drill D140",
+        "type": "seed drill",
+        "price_per_day": 2347,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R110",
+        "type": "rotator",
+        "price_per_day": 2653,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9104364392",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 179,
+    "farmer": "Farmer 179",
+    "equipments": [
+      {
+        "name": "Tractor T957",
+        "type": "tractor",
+        "price_per_day": 4597,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P991",
+        "type": "plough",
+        "price_per_day": 1043,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D384",
+        "type": "seed drill",
+        "price_per_day": 1076,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S477",
+        "type": "sprayer",
+        "price_per_day": 1665,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9363522183",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 180,
+    "farmer": "Farmer 180",
+    "equipments": [
+      {
+        "name": "Rotator R344",
+        "type": "rotator",
+        "price_per_day": 3395,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T737",
+        "type": "tractor",
+        "price_per_day": 4281,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9286760659",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 181,
+    "farmer": "Farmer 181",
+    "equipments": [
+      {
+        "name": "Rotator R620",
+        "type": "rotator",
+        "price_per_day": 3854,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Harvester H878",
+        "type": "harvester",
+        "price_per_day": 4032,
+        "description": "Efficient harvester for wheat and rice crops."
+      }
+    ],
+    "contact": "+91-9717245299",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 182,
+    "farmer": "Farmer 182",
+    "equipments": [
+      {
+        "name": "Rotator R589",
+        "type": "rotator",
+        "price_per_day": 3392,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S342",
+        "type": "sprayer",
+        "price_per_day": 1645,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9926128574",
+    "location": "Patna, Bihar"
+  },
+  {
+    "id": 183,
+    "farmer": "Farmer 183",
+    "equipments": [
+      {
+        "name": "Plough P901",
+        "type": "plough",
+        "price_per_day": 1028,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S196",
+        "type": "sprayer",
+        "price_per_day": 1259,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9077175864",
+    "location": "Kolkata, West Bengal"
+  },
+  {
+    "id": 184,
+    "farmer": "Farmer 184",
+    "equipments": [
+      {
+        "name": "Seed Drill D511",
+        "type": "seed drill",
+        "price_per_day": 1089,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R785",
+        "type": "rotator",
+        "price_per_day": 2549,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9005875828",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 185,
+    "farmer": "Farmer 185",
+    "equipments": [
+      {
+        "name": "Seed Drill D706",
+        "type": "seed drill",
+        "price_per_day": 2414,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Tractor T133",
+        "type": "tractor",
+        "price_per_day": 2221,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9410115930",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 186,
+    "farmer": "Farmer 186",
+    "equipments": [
+      {
+        "name": "Harvester H200",
+        "type": "harvester",
+        "price_per_day": 2354,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Plough P818",
+        "type": "plough",
+        "price_per_day": 721,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Seed Drill D924",
+        "type": "seed drill",
+        "price_per_day": 1877,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Rotator R367",
+        "type": "rotator",
+        "price_per_day": 1378,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9706507648",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 187,
+    "farmer": "Farmer 187",
+    "equipments": [
+      {
+        "name": "Harvester H110",
+        "type": "harvester",
+        "price_per_day": 2105,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T184",
+        "type": "tractor",
+        "price_per_day": 4093,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Seed Drill D793",
+        "type": "seed drill",
+        "price_per_day": 2483,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P296",
+        "type": "plough",
+        "price_per_day": 591,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9072842223",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 188,
+    "farmer": "Farmer 188",
+    "equipments": [
+      {
+        "name": "Plough P438",
+        "type": "plough",
+        "price_per_day": 1478,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Sprayer S288",
+        "type": "sprayer",
+        "price_per_day": 434,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9160687175",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 189,
+    "farmer": "Farmer 189",
+    "equipments": [
+      {
+        "name": "Rotator R478",
+        "type": "rotator",
+        "price_per_day": 1115,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S672",
+        "type": "sprayer",
+        "price_per_day": 1786,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T760",
+        "type": "tractor",
+        "price_per_day": 3835,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9662119615",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 190,
+    "farmer": "Farmer 190",
+    "equipments": [
+      {
+        "name": "Tractor T285",
+        "type": "tractor",
+        "price_per_day": 4354,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Seed Drill D514",
+        "type": "seed drill",
+        "price_per_day": 2594,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P976",
+        "type": "plough",
+        "price_per_day": 543,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9464145380",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 191,
+    "farmer": "Farmer 191",
+    "equipments": [
+      {
+        "name": "Sprayer S577",
+        "type": "sprayer",
+        "price_per_day": 452,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Rotator R618",
+        "type": "rotator",
+        "price_per_day": 3061,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D793",
+        "type": "seed drill",
+        "price_per_day": 1936,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P393",
+        "type": "plough",
+        "price_per_day": 949,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9869430373",
+    "location": "Varanasi, Uttar Pradesh"
+  },
+  {
+    "id": 192,
+    "farmer": "Farmer 192",
+    "equipments": [
+      {
+        "name": "Harvester H974",
+        "type": "harvester",
+        "price_per_day": 3093,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Sprayer S256",
+        "type": "sprayer",
+        "price_per_day": 661,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Seed Drill D315",
+        "type": "seed drill",
+        "price_per_day": 2970,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9226186953",
+    "location": "Chennai, Tamil Nadu"
+  },
+  {
+    "id": 193,
+    "farmer": "Farmer 193",
+    "equipments": [
+      {
+        "name": "Rotator R728",
+        "type": "rotator",
+        "price_per_day": 3224,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S527",
+        "type": "sprayer",
+        "price_per_day": 1439,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T236",
+        "type": "tractor",
+        "price_per_day": 3915,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Plough P837",
+        "type": "plough",
+        "price_per_day": 933,
+        "description": "Durable plough for heavy soil."
+      }
+    ],
+    "contact": "+91-9146155348",
+    "location": "Mumbai, Maharashtra"
+  },
+  {
+    "id": 194,
+    "farmer": "Farmer 194",
+    "equipments": [
+      {
+        "name": "Rotator R712",
+        "type": "rotator",
+        "price_per_day": 3530,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Sprayer S474",
+        "type": "sprayer",
+        "price_per_day": 442,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9899547501",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 195,
+    "farmer": "Farmer 195",
+    "equipments": [
+      {
+        "name": "Sprayer S268",
+        "type": "sprayer",
+        "price_per_day": 665,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T109",
+        "type": "tractor",
+        "price_per_day": 1508,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9906563004",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 196,
+    "farmer": "Farmer 196",
+    "equipments": [
+      {
+        "name": "Plough P182",
+        "type": "plough",
+        "price_per_day": 905,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R778",
+        "type": "rotator",
+        "price_per_day": 3658,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Tractor T130",
+        "type": "tractor",
+        "price_per_day": 3506,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Sprayer S463",
+        "type": "sprayer",
+        "price_per_day": 1529,
+        "description": "Manual or motorized pesticide sprayer."
+      }
+    ],
+    "contact": "+91-9997896411",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 197,
+    "farmer": "Farmer 197",
+    "equipments": [
+      {
+        "name": "Harvester H323",
+        "type": "harvester",
+        "price_per_day": 2008,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Seed Drill D265",
+        "type": "seed drill",
+        "price_per_day": 1142,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Plough P305",
+        "type": "plough",
+        "price_per_day": 1334,
+        "description": "Durable plough for heavy soil."
+      },
+      {
+        "name": "Rotator R551",
+        "type": "rotator",
+        "price_per_day": 3981,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9152974373",
+    "location": "Jaipur, Rajasthan"
+  },
+  {
+    "id": 198,
+    "farmer": "Farmer 198",
+    "equipments": [
+      {
+        "name": "Seed Drill D281",
+        "type": "seed drill",
+        "price_per_day": 2131,
+        "description": "High efficiency seed drill for large fields."
+      },
+      {
+        "name": "Sprayer S874",
+        "type": "sprayer",
+        "price_per_day": 913,
+        "description": "Manual or motorized pesticide sprayer."
+      },
+      {
+        "name": "Tractor T148",
+        "type": "tractor",
+        "price_per_day": 1626,
+        "description": "Efficient tractor for medium farms."
+      }
+    ],
+    "contact": "+91-9238573920",
+    "location": "Raipur, Chhattisgarh"
+  },
+  {
+    "id": 199,
+    "farmer": "Farmer 199",
+    "equipments": [
+      {
+        "name": "Harvester H318",
+        "type": "harvester",
+        "price_per_day": 4388,
+        "description": "Efficient harvester for wheat and rice crops."
+      },
+      {
+        "name": "Tractor T720",
+        "type": "tractor",
+        "price_per_day": 4950,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R277",
+        "type": "rotator",
+        "price_per_day": 3541,
+        "description": "Rotator for soil preparation and mixing."
+      },
+      {
+        "name": "Seed Drill D186",
+        "type": "seed drill",
+        "price_per_day": 2510,
+        "description": "High efficiency seed drill for large fields."
+      }
+    ],
+    "contact": "+91-9687697262",
+    "location": "Gorakhpur, Uttar Pradesh"
+  },
+  {
+    "id": 200,
+    "farmer": "Farmer 200",
+    "equipments": [
+      {
+        "name": "Tractor T260",
+        "type": "tractor",
+        "price_per_day": 3401,
+        "description": "Efficient tractor for medium farms."
+      },
+      {
+        "name": "Rotator R719",
+        "type": "rotator",
+        "price_per_day": 1502,
+        "description": "Rotator for soil preparation and mixing."
+      }
+    ],
+    "contact": "+91-9961219798",
+    "location": "Chennai, Tamil Nadu"
+  }
+]

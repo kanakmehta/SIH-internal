@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Kisaan Saathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Jockey+One&family=Kumar+One&family=Josefin+Sans:wght@400&family=Joan&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .profile-container {
+            width: 1440px;
+            height: 1024px;
+            overflow: hidden;
+            position: relative;
+            background: url('https://www.tastingtable.com/img/gallery/how-a-major-threat-to-rice-crops-is-gaining-resilience/l-intro-1663012485.jpg') no-repeat center center/cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* Decreased to 50% opacity */
+            z-index: 1;
+        }
+
+        .profile-header {
+            width: 100%;
+            height: 143px;
+            background-color: rgba(7, 50, 16, 0.8);
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space between content and back button */
+            padding: 0 40px 0 78px; /* Adjusted padding for alignment */
+            box-sizing: border-box;
+        }
+        
+        .header-left-content { /* New container for icon and text */
+            display: flex;
+            align-items: center;
+        }
+
+        .back-button { /* Back button now on the far right of the header */
+            font-size: 80px;
+            color: #DBFFBD;
+            text-decoration: none;
+            cursor: pointer;
+            line-height: 1;
+        }
+        
+        .header-icon {
+            width: 96px;
+            height: 96px;
+            margin-right: 20px;
+            background-color: transparent;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-icon svg {
+            width: 80%;
+            height: 80%;
+            fill: #DBFFBD;
+        }
+
+        .profile-text {
+            font-family: 'Jomhuria', cursive;
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 100%;
+            color: #FFFFFF;
+            margin: 0;
+        }
+        
+        .farmer-info-box {
+            width: 270px;
+            height: 63px;
+            background-color: #A7CA81;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 10px;
+            left: 106px;
+            z-index: 2;
+        }
+
+        .farmer-info-text {
+            font-family: 'Jockey One', cursive;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 100%;
+            color: #073210;
+        }
+        
+        .main-profile-box {
+            width: 1344px;
+            height: 502px;
+            background-color: rgba(231, 253, 190, 0.5);
+            border-radius: 40px;
+            position: absolute;
+            top: 279px;
+            left: 47px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .profile-image-container {
+            width: 378px;
+            height: 380px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 50px;
+            position: relative;
+        }
+
+        .profile-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-grow: 1;
+        }
+        
+        .name-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .name-text {
+            font-family: 'Kumar One', cursive;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 100%;
+            color: #254828;
+            margin: 0;
+        }
+
+        .edit-button {
+            margin-left: 20px;
+            font-size: 24px;
+            color: #254828;
+            cursor: pointer;
+        }
+
+        .username-text, .address-text, .email-text {
+            font-family: 'Joan', serif;
+            font-weight: 400;
+            line-height: 100%;
+            margin: 10px 0 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .username-text {
+            font-size: 32px;
+            color: #197734;
+        }
+
+        .address-text {
+            font-size: 36px;
+            color: #254828;
+        }
+
+        .email-text {
+            font-size: 36px;
+            color: #197734;
+        }
+
+        .info-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .friends-section {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .friends-text {
+            display: flex;
+            align-items: center;
+            font-family: 'Joan', serif;
+            font-size: 36px;
+            color: #254828;
+            font-weight: bold;
+        }
+
+        .friends-text .icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .add-friends-box {
+            width: 395px;
+            height: 97px;
+            border-radius: 50px;
+            background-color: rgba(56, 109, 67, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-friends-box:hover {
+            background-color: rgba(56, 109, 67, 0.7);
+        }
+
+        .add-friends-text {
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 100%;
+            color: #073210;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <div class="background-overlay"></div>
+    
+    <div class="profile-header">
+        <div class="header-left-content">
+            <div class="header-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+            </div>
+            <h1 class="profile-text">Profile</h1>
+        </div>
+        <a href="javascript:history.back();" class="back-button">&lt;</a> 
+    </div>
+
+    <div class="farmer-info-box">
+        <p class="farmer-info-text">Farmer info</p>
+    </div>
+
+    <div class="main-profile-box">
+        <div class="profile-image-container">
+            <img src="https://i.pinimg.com/736x/87/e0/02/87e00247015af3899af0a33a24d78fde.jpg" alt="Farmer Profile Picture">
+        </div>
+        <div class="profile-details">
+            <div class="name-container">
+                <h2 class="name-text">Suresh Singh</h2>
+                <a href="#" class="edit-button">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M20.71,7.04C20.32,6.65 19.67,6.65 19.28,7.04L18.49,7.83L20.42,9.76L21.21,8.97C21.6,8.58 21.6,7.93 21.21,7.54L20.71,7.04M12,14.04L2,24V19H12.04L19.5,11.5L12,4.04C10.5,2.54 8.24,2.54 6.74,4.04L2,8.78L12.04,18.82L19.5,11.36L12,14.04Z" />
+                    </svg>
+                    Edit
+                </a>
+            </div>
+            <p class="username-text">@sureshsingh5892</p>
+            <p class="address-text">Yamuna Nagar, Haryana</p>
+            <p class="email-text">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                sureshsingh675@gmail.com
+            </p>
+            
+            <div class="friends-section">
+                <p class="friends-text">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-4 0c1.66 0 2.99-1.34 2.99-3S13.66 5 12 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    187 Friends
+                </p>
+                <div class="add-friends-box">
+                    <p class="add-friends-text">+ Add Friends</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

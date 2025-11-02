@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment Details</title>
+  <style>
+    body { font-family: 'Golos Text', sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+    header { background: #2e7d32; color: #fff; padding: 20px; text-align: center; font-size: 28px; font-weight: bold; }
+    .container {
+      max-width: 800px; margin: 40px auto; background: #fff; padding: 30px;
+      border-radius: 20px; box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .equipment-img {
+      width: 100%; max-height: 350px; object-fit: contain; border-radius: 15px; margin-bottom: 20px;
+    }
+    h2 { color: #2e7d32; margin-bottom: 15px; }
+    p { font-size: 16px; margin: 10px 0; }
+    .btn {
+      background: #2e7d32; color: #fff; padding: 14px 22px; border: none;
+      border-radius: 12px; font-size: 16px; cursor: pointer; margin-top: 15px;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #256528; }
+    .back-btn { display: inline-block; margin-top: 20px; text-decoration: none; color: #2e7d32; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>Equipment Details</header>
+  <div class="container" id="equipment-details">
+    <p>Loading...</p>
+  </div>
+
+  <script>
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    function getImagePath(image) {
+      if (!image || image.trim() === "") return "./images/placeholder.png";
+      return "./images/" + image.replace(/^images[\\/]/, "");
+    }
+
+    async function loadEquipmentDetails() {
+      const container = document.getElementById("equipment-details");
+      const id = getQueryParam("id");
+
+      if (!id) {
+        container.innerHTML = "<p style='color:red;'>No equipment selected.</p>";
+        return;
+      }
+
+      try {
+        const res = await fetch("./equipments.json");
+        const equipments = await res.json();
+        const eq = equipments.find(item => item.id == id);
+
+        if (!eq) {
+          container.innerHTML = "<p style='color:red;'>Equipment not found.</p>";
+          return;
+        }
+
+        container.innerHTML = `
+          <img src="${getImagePath(eq.image)}" alt="${eq.name}" class="equipment-img">
+          <h2>${eq.name}</h2>
+          <p><strong>Type:</strong> ${eq.type}</p>
+          <p><strong>Description:</strong> ${eq.description || "No description available."}</p>
+          <button class="btn" onclick="window.location.href='rent.html?id=${eq.id}'">Rent Now</button>
+          <br><a href="javascript:history.back()" class="back-btn">⬅ Back to Equipments</a>
+        `;
+      } catch (err) {
+        container.innerHTML = "<p style='color:red;'>Error loading equipment details.</p>";
+        console.error(err);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadEquipmentDetails);
+  </script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Kisaan Saathi (Page 3)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Krona+One&display=swap" rel="stylesheet">
+    <style>
+        /* Keep your original Page 3 CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .dashboard-container {
+            width: 1440px;
+            height: 1024px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: url('https://scitechdaily.com/images/Crops-Growing-Fertile-Farm-Land.jpg') no-repeat center center/cover;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 49px 0 0 78px;
+            box-sizing: border-box;
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 1;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 40px;
+            color: #174821;
+            text-decoration: none;
+            cursor: pointer;
+            z-index: 3;
+            line-height: 1;
+            font-weight: bold;
+        }
+
+        .header-section {
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .back-arrow {
+            font-size: 80px;
+            color: #DBFFBD;
+            text-decoration: none;
+            margin-right: -25px;
+        }
+
+        .dashboard-header {
+            width: 399px;
+            height: 102px;
+            border-radius: 50px;
+            background-color: #174821;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .hamburger-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .hamburger-icon span {
+            display: block;
+            width: 100%;
+            height: 5px;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        .dashboard-header-text {
+            font-family: 'Krona One', sans-serif;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 321px);
+            grid-template-rows: repeat(2, 284px);
+            gap: 108px 140px;
+            margin-top: 50px;
+            z-index: 2;
+        }
+
+        .grid-item {
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .grid-item.color-1 {
+            background-color: #9FFAA5;
+        }
+
+        .grid-item.color-2 {
+            background-color: #DBFFBD;
+        }
+
+        .grid-item .icon-image {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .grid-item-text {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 48px;
+            line-height: 1;
+            color: #174821;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard-container">
+    <div class="background-overlay"></div>
+    <a href="javascript:window.close();" class="close-button">&times;</a>
+
+    <div class="header-section">
+        <a href="javascript:history.back()" class="back-arrow">&lt;</a>
+        <div class="dashboard-header">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="dashboard-header-text">Dashboard</div>
+        </div>
+    </div>
+    
+    <div class="content-grid">
+        <div id="chat-ai" class="grid-item color-1">
+            <img class="icon-image" src="https://static.vecteezy.com/system/resources/previews/014/666/066/non_2x/chat-bot-icon-vector.jpg" alt="Chat With AI Icon">
+            <p class="grid-item-text">Chat With AI</p>
+        </div>
+        
+        <div id="weather" class="grid-item color-2">
+            <img class="icon-image" src="https://static.vecteezy.com/system/resources/previews/022/853/056/original/sun-cloud-icon-vector.jpg" alt="Weather Icon">
+            <p class="grid-item-text">Weather</p>
+        </div>
+        
+        <div id="scanner" class="grid-item color-1">
+            <img class="icon-image" src="https://cdn-icons-png.flaticon.com/512/5996/5996808.png" alt="Scanner Icon">
+            <p class="grid-item-text">Scanner</p>
+        </div>
+        
+        <div id="rent-equipments" class="grid-item color-2">
+            <img class="icon-image" src="https://thumbs.dreamstime.com/b/print-223104969.jpg" alt="Rent Equipments Icon">
+            <p class="grid-item-text">Rent Equipments</p>
+        </div>
+        
+        <div id="govt-schemes" class="grid-item color-1">
+            <img class="icon-image" src="https://www.kindpng.com/picc/m/330-3300409_environmental-governance-icon-hd-png-download.png" alt="Government Schemes Icon">
+            <p class="grid-item-text">Government Schemes</p>
+        </div>
+        
+        <div id="pesticides" class="grid-item color-2">
+            <img class="icon-image" src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-chemistry-organic-with-chemical-and-leaf-symbol-logo-icon-png-image_3618180.jpg" alt="Pesticides Icon">
+            <p class="grid-item-text">Pesticides</p>
+        </div>
+    </div>
+
+    <!-- Equipments List Container -->
+    <div id="equipments-list" style="margin-top:50px; padding-left:78px; z-index:2;"></div>
+</div>
+
+<script>
+    // Load equipments dynamically
+    async function loadEquipments() {
+        const container = document.getElementById("equipments-list");
+        container.innerHTML = "<h2>Loading equipments...</h2>";
+
+        try {
+            const res = await fetch("http://localhost:8000/equipments/", {
+                headers: { "Authorization": "Bearer " + localStorage.getItem("token") }
+            });
+            const equipments = await res.json();
+
+            if (!equipments || equipments.length === 0) {
+                container.innerHTML = "<p>No equipments available right now.</p>";
+                return;
+            }
+
+            container.innerHTML = "<h2>Available Equipments</h2>";
+            equipments.forEach(eq => {
+                const div = document.createElement("div");
+                div.style.border = "1px solid #254828";
+                div.style.borderRadius = "12px";
+                div.style.padding = "15px";
+                div.style.marginBottom = "10px";
+                div.style.backgroundColor = "#DBFFBD";
+                div.style.cursor = "pointer";
+
+                div.innerHTML = `
+                    <h3>${eq.name}</h3>
+                    <p>Type: ${eq.type}</p>
+                    <p>Price per day: ₹${eq.price_per_day}</p>
+                `;
+
+                div.addEventListener("click", () => {
+                    window.location.href = `equipment_details.html?id=${eq.id}`;
+                });
+
+                container.appendChild(div);
+            });
+        } catch (err) {
+            container.innerHTML = "<p>Error loading equipments.</p>";
+            console.error(err);
+        }
+    }
+
+    // ✅ Navigation listeners
+    document.getElementById("chat-ai").addEventListener("click", () => {
+        alert("🚧 Chat With AI feature coming soon!");
+    });
+    document.getElementById("weather").addEventListener("click", () => {
+        alert("🌦️ Weather feature coming soon!");
+    });
+    document.getElementById("scanner").addEventListener("click", () => {
+        alert("📷 Scanner feature coming soon!");
+    });
+    document.getElementById("rent-equipments").addEventListener("click", loadEquipments);
+    document.getElementById("govt-schemes").addEventListener("click", () => {
+        window.location.href = "govt_schemes.html";
+    });
+    document.getElementById("pesticides").addEventListener("click", () => {
+        window.location.href = "pesticides.html";
+    });
+</script>
+
+</body>
+</html>

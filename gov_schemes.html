@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Government Schemes</title>
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Golos+Text:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Body & Background */
+body {
+    margin:0;
+    padding:0;
+    font-family:'Golos Text', sans-serif;
+    background-color:#A7CA81;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content:"";
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://photomedia.in/wp-content/uploads/2023/07/ashok-chakra-vector-2048x2048.png');
+    background-size: 200px 200px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+/* Container */
+.container {
+    width:95%;
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: linear-gradient(90deg, #FF9933, #FFFFFF, #138808); /* Tricolor gradient */
+    color:white;
+    padding:20px 25px;
+    border-radius:15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top:0;
+    z-index: 5;
+}
+
+header h1 {
+    font-family:'Goblin One', cursive;
+    font-size:36px;
+    margin:0;
+    color:#174821;
+}
+
+header button {
+    background:#FB3333;
+    border:none;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Scheme List */
+.scheme-list {
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+    margin-top:25px;
+}
+
+/* Scheme Cards */
+.scheme-card {
+    background: rgba(255,255,255,0.95);
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-left: 10px solid #FF9933; /* tricolor accent */
+}
+
+.scheme-card:hover {
+    transform: translateY(-8px);
+    box-shadow:0 12px 20px rgba(0,0,0,0.25);
+    border-left-color: #138808;
+}
+
+.scheme-card h2 {
+    color:#174821;
+    margin-top:0;
+    font-size:24px;
+}
+
+.scheme-card p {
+    color:#333;
+    line-height:1.6;
+    font-size:16px;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    header h1 { font-size:28px; }
+    .scheme-card h2 { font-size:20px; }
+    .scheme-card p { font-size:14px; }
+    header { flex-direction: column; gap:10px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <button onclick="history.back()">&lt; Back</button>
+        <h1>Government Schemes</h1>
+        <button onclick="window.close()">Exit</button>
+    </header>
+
+    <main class="scheme-list">
+        <div class="scheme-card">
+            <h2>PM-KISAN</h2>
+            <p>Direct income support of ₹6,000 per year to small and marginal farmers.</p>
+        </div>
+        <div class="scheme-card">
+            <h2>PMFBY</h2>
+            <p>Crop insurance scheme for loss due to natural risks.</p>
+        </div>
+        <div class="scheme-card">
+            <h2>PM-KUSUM</h2>
+            <p>Promotes solar energy use for agriculture with pumps and solar plants.</p>
+        </div>
+        <div class="scheme-card">
+            <h2>Kisan Credit Card (KCC)</h2>
+            <p>Provides short-term credit for crop production and allied activities.</p>
+        </div>
+        <div class="scheme-card">
+            <h2>Soil Health Card (SHC)</h2>
+            <p>Detailed report on soil nutrient status and fertilizer recommendations.</p>
+        </div>
+        <div class="scheme-card">
+            <h2>PMKSY</h2>
+            <p>Assured irrigation to farms for better water efficiency ('Har Khet Ko Pani').</p>
+        </div>
+    </main>
+</div>
+</body>
+</html>

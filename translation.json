@@ -1,0 +1,15 @@
+{
+  "en": {
+    "title": "Government Schemes",
+    "scheme1": "Pradhan Mantri Awas Yojana",
+    "scheme2": "MGNREGA",
+    "scheme3": "PM-Kisan Samman Nidhi"
+  },
+  "hi": {
+    "title": "सरकारी योजनाएँ",
+    "scheme1": "प्रधान मंत्री आवास योजना",
+    "scheme2": "मनरेगा",
+    "scheme3": "पीएम-किसान सम्मान निधि"
+  }
+}
+

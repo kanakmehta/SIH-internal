@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kisaan Saathi - Welcome</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Krona+One&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: url('https://scitechdaily.com/images/Crops-Growing-Fertile-Farm-Land.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+.overlay { position: absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); z-index:1; }
+.container {
+    position: relative; z-index:2;
+    background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    padding: 60px 50px; border-radius: 25px; text-align:center; box-shadow:0 8px 25px rgba(0,0,0,0.3); max-width:500px; width:90%;
+    animation: fadeIn 1s ease forwards;
+}
+h1 { font-family: 'Krona One', sans-serif; font-size: 42px; color:#DBFFBD; margin-bottom: 20px; position: relative; }
+h1::before { content: '🌾'; font-size:48px; position:absolute; left:-60px; top:-10px; animation: bounce 2s infinite; }
+@keyframes bounce { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-10px); } }
+p { font-size:20px; margin-bottom:30px; color:#DBFFBD; }
+button { padding:14px 28px; font-size:18px; border:none; border-radius:12px; background: linear-gradient(90deg, #174821, #2e6219); color:#DBFFBD; font-weight:700; cursor:pointer; transition: all 0.3s ease; box-shadow:0 8px 20px rgba(0,0,0,0.2); }
+button:hover { transform:translateY(-3px); background: linear-gradient(90deg,#2e6219,#174821); box-shadow:0 12px 25px rgba(0,0,0,0.3); }
+@keyframes fadeIn { from { opacity:0; transform: translateY(-20px); } to { opacity:1; transform: translateY(0); } }
+@media (max-width:480px) { h1 { font-size:32px; } p { font-size:18px; } button { font-size:16px; padding:12px 24px; } }
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="container">
+    <!-- <h1>Namaste🙏, {{ username }}!</h1> -->
+     <h1>Namaste🙏!</h1>
+    <p>Welcome to Kisaan Saathi! Your farming companion 🌱</p>
+    <!-- Updated button to open dashboard -->
+    <button onclick="window.location.href='dashboard.html'">Get Started</button>
+</div>
+</body>
+</html>
